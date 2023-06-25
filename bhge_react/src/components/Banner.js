@@ -16,7 +16,7 @@ function Banner() {
                 <Box pb={2}>
                 </Box>
                 <Button component={Link}  sx={{ borderRadius: '16px' }} to="/" variant="contained" color="primary" size="large">
-                <Typography color={'tertiary'} variant="h6" align="left">
+                <Typography color={'tertiary'} variant="h5" align="left">
                     How to participate
                     </Typography>
                     {/* How to participate */}

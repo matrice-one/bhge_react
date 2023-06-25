@@ -3,9 +3,15 @@ import React from "react";
 import Banner from './Banner';
 import Header from "./Header";
 import bannerImage from '../media/images/vue_evaux.jpeg'
-
+import PresentationSection from "./PresentationSection";
+import FeatureCard from "./FeaturesSection";
+import MembershipSection from "./MembershipSection"
+import { Box, Grid, Typography, Link, Button } from "@mui/material";
+import FeaturesSection from "./FeaturesSection";
+import GallerySection from "./GallerySection";
 const HomePage = () => {
     return (
+        <div>
         <div style={{
             backgroundImage: `url(${bannerImage})`,
             backgroundSize: 'cover',
@@ -31,7 +37,14 @@ const HomePage = () => {
                 <Header />
                 <Banner />
             </div>
+            
         </div>
+       <PresentationSection></PresentationSection>
+       <FeaturesSection></FeaturesSection>
+       <MembershipSection></MembershipSection>
+        <GallerySection></GallerySection>
+        </div>
+        
     )
 }
 

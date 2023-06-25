@@ -8,14 +8,19 @@ const theme = createTheme({
     secondary: {
       main: '#0098FF',
     },
-  },
-  customPalette: {
     tertiary: {
-      main: 'black',
+      main: '#000',
     },
   },
   typography: {
     fontFamily: "Staatliches",
+    body1: {
+      fontFamily: 'Mohave'
+    },
+    h6: {
+      fontFamily: 'Mohave',
+      fontSize: 32
+    },
     // fontSize: 16,
     // h1: {
     //   fontSize: '2.3rem',
