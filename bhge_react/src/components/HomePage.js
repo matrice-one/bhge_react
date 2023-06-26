@@ -9,6 +9,9 @@ import MembershipSection from "./MembershipSection"
 import { Box, Grid, Typography, Link, Button } from "@mui/material";
 import FeaturesSection from "./FeaturesSection";
 import GallerySection from "./GallerySection";
+import ContactFormSection from "./ContactFormSection";
+import Footer from "./Footer";
+
 const HomePage = () => {
     return (
         <div>
@@ -43,6 +46,8 @@ const HomePage = () => {
        <FeaturesSection></FeaturesSection>
        <MembershipSection></MembershipSection>
         <GallerySection></GallerySection>
+        <ContactFormSection></ContactFormSection>
+        <Footer></Footer>
         </div>
         
     )

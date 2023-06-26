@@ -16,7 +16,7 @@ function GallerySection() {
 
   return (
     // <Box p={4}>
-        <Grid container spacing={0}>
+        <Grid container spacing={0} bgcolor={'black'}>
             <Grid item xs={6} md={3}>
             <img src={imageGallery1} alt="Section" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </Grid>
