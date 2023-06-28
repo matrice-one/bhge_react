@@ -11,9 +11,9 @@ function MembershipSection() {
       ];
     
       return (
-        <Box p={4} bgcolor={'secondary.main'}>
-          <Typography color={'primary.main'} variant="h2" gutterBottom>
-            How to participate
+        <Box id="membershipsection" p={4} bgcolor={'secondary.main'}>
+          <Typography color={'primary.main'} variant="h3" gutterBottom>
+            Become a member
           </Typography>
           <Grid container spacing={20}>
             {sections.map((section, index) => (

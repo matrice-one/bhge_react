@@ -4,10 +4,10 @@ function ContactFormSection() {
     const theme = useTheme();
 
     return(
-    <Grid container spacing={0} bgcolor={'primary.main'}>
+    <Grid id="contactsection" container spacing={0} bgcolor={'primary.main'}>
         <Grid item xs={12} sm={6}>
             <Box p={4}>
-                <Typography variant='h2' gutterBottom >Contact Us</Typography>
+                <Typography variant='h3' gutterBottom >Contact Us</Typography>
                 <Typography variant='body1'>Beach Center Geneva is an association of local beach volleyball lovers with a common goal. Don’t hesitate to get in touch!</Typography>
                 <form noValidate autoComplete="off">
                     <TextField fullWidth margin="normal" label="First Name" variant="outlined" />
