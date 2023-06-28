@@ -1,24 +1,24 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#FCE6BE',
+      main: "#FCE6BE",
     },
     secondary: {
-      main: '#0098FF',
+      main: "#0098FF",
     },
     tertiary: {
-      main: '#000',
+      main: "#000",
     },
   },
   typography: {
     fontFamily: "Staatliches",
     body1: {
-      fontFamily: 'Mohave'
+      fontFamily: "Mohave"
     },
     h6: {
-      fontFamily: 'Mohave',
+      fontFamily: "Mohave",
       fontSize: 32
     },
     // fontSize: 16,
@@ -30,7 +30,7 @@ const theme = createTheme({
     // },
     // h3: {
     // }
-}
+  }
 }
 );
 
