@@ -3,9 +3,8 @@ import Banner from './Banner';
 import Header from "./Header";
 import bannerImage from '../media/images/vue_evaux.jpeg'
 import PresentationSection from "./PresentationSection";
-import FeatureCard from "./FeaturesSection";
 import MembershipSection from "./MembershipSection"
-import { Box, Grid, Typography, Link, Button } from "@mui/material";
+import { Box,} from "@mui/material";
 import FeaturesSection from "./FeaturesSection";
 import GallerySection from "./GallerySection";
 import ContactFormSection from "./ContactFormSection";

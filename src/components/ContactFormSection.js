@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, TextField, Button, Grid, Typography, useTheme } from '@mui/material';
+import { Box TextField, Button, Grid, Typography, useTheme } from '@mui/material';
 
 function ContactFormSection() {
     const theme = useTheme();

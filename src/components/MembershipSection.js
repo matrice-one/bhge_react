@@ -1,8 +1,7 @@
 // Banner.js
 import React from 'react';
 import { Typography, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
-import { Box, Card, CardContent, Grid, useTheme } from '@mui/material';
+import { Box, Grid, } from '@mui/material';
 
 function MembershipSection() {
     const sections = [

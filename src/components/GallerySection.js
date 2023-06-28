@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Grid, Typography, useTheme } from '@mui/material';
+import { Grid, } from '@mui/material';
 import imageGallery1 from '../media/images/gallerie_picture_1.png'
 import imageGallery2 from '../media/images/gallerie_picture_2.png'
 import imageGallery3 from '../media/images/gallerie_picture_3.png'
@@ -11,7 +11,6 @@ function GallerySection() {
 //     { title: 'Skill Development', description: 'By working with existing programs and coaches, as well as introducing our own, we plan to offer camps, and classes players of all levels to improve their skills.' },
 //     { title: 'Events & Tournaments', description: "From official beach volleyball tournaments to private events, we will provide a space for players of all levels to showcase their skills and enjoy high-energy games." },
 //   ];
-  const theme = useTheme();
 
 
   return (

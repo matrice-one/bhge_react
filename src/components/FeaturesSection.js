@@ -7,8 +7,6 @@ function FeaturesSection() {
     { title: 'Skill Development', description: 'By working with existing programs and coaches, as well as introducing our own, we plan to offer camps, and classes players of all levels to improve their skills.' },
     { title: 'Events & Tournaments', description: "From official beach volleyball tournaments to private events, we will provide a space for players of all levels to showcase their skills and enjoy high-energy games." },
   ];
-  const theme = useTheme();
-
 
   return (
   <Box p={4} bgcolor={'primary.main'}>
