@@ -1,12 +1,13 @@
 // Banner.js
 import React from "react";
-import { Typography, Button } from "@mui/material";
+import { Typography, } from "@mui/material";
 import { Box, Grid, } from "@mui/material";
+import FormModal from "./FormModal";
 
 function MembershipSection() {
   const sections = [
     { title: "Crowdfunding membership", subtitle:"Support us as a member of honor", description: "If you’d like to take your support a step further, you can contribute to our crowdfunding campaign and become a member of honor. As a member of honor, you'll receive priority access to the facility, and discounts on certain services and events.", buttonText: "Become a member of honor" },
-    { title: "Free membership", subtitle:"Support us with a free membership", description: "This is a short description for section 2.", buttonText: "Become a member for free" },
+    { title: "Free membership", subtitle:"Support us with a free membership", description: "You can also show your interest in our project and join our growing community by signing up for a free membership. As a member, you'll receive updates on our progress, invitations to special events, and the satisfaction of contributing to the future of indoor beach volleyball.", buttonText: "Become a member for free" },
   ];
     
   return (
@@ -26,9 +27,7 @@ function MembershipSection() {
             <Typography color={"primary.main"} variant="body1" gutterBottom>
               {section.description}
             </Typography>
-            <Button variant="contained" color="primary">
-              {section.buttonText}
-            </Button>
+            <FormModal buttonText= {section.buttonText} />
           </Grid>
         ))}
       </Grid>
@@ -36,41 +35,6 @@ function MembershipSection() {
   );
 }
     
-//     return (
-        
-//         <Box p={4} bgcolor={'primary.main'}>
-//             <Grid container spacing={4}>
-//                 <Grid item xs={12} sm={12} md={6} >
-//                     {/* <Card>
-//                     <Box> */}
-//                         <Typography variant='h3'>
-//                             Bim
-//                         </Typography>
-//                         <Typography variant='body1'>
-//                             Bim
-//                         </Typography>
-//                     </Grid>
-//                     {/* </Box>
-//                     </Card> */}
-//                     {/* <Card>
-                    
 
-//                     </Card> */}
-//                     {/* <Box> */}
-//                     <Grid item xs={12} sm={12} md={6} >
-
-//                         <Typography variant='h3'>
-//                             Bam
-//                         </Typography>
-//                         <Typography variant='body1'>
-//                             Bim
-//                         </Typography>
-//                         {/* </Grid> */}
-//                     {/* </Box> */}
-//                 </Grid>
-//             </Grid>
-//         </Box>
-//     )
-// }
 
 export default MembershipSection;
