@@ -32,16 +32,16 @@ export default function Header() {
 
   const drawer = (
     <List>
-      <ListItem button >
-        <ListItemText primary="The project" />
-      </ListItem>
-      <ListItem button>
-        <ListItemText primary="News and events" />
-      </ListItem>
-      <ListItem button>
-        <ListItemText primary="Become a member" />
-      </ListItem>
-    </List>
+    <ListItem button onClick={() => {scrollTo("presentationsection"); handleDrawerToggle();}}>
+      <ListItemText primary="The project" />
+    </ListItem>
+    <ListItem button onClick={() => {scrollTo("membershipsection"); handleDrawerToggle();}}>
+      <ListItemText primary="Become a member" />
+    </ListItem>
+    <ListItem button onClick={() => {scrollTo("contactsection"); handleDrawerToggle();}}>
+      <ListItemText primary="Contact us" />
+    </ListItem>
+  </List>
   );
 
   return (
