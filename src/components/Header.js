@@ -45,8 +45,8 @@ export default function Header() {
   );
 
   return (
-    <AppBar position="static" elevation={0} style={{ backgroundColor: "transparent" }}>
-      <Toolbar>
+    <AppBar position="static" elevation={0} style={{paddingLeft: "2rem", paddingRight: "2rem", paddingTop: "1rem",backgroundColor: "transparent" }}>
+      <Toolbar padding>
         <Typography color={"primary"} variant="h5" sx={{ flexGrow: 1 }}>
           <img src={Logo} alt="logo" style={{ height: "60px",}} /> {/* adjust the height as needed */}
           BEACH VOLLEY HALLES GENEVA
