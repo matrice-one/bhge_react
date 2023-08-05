@@ -1,6 +1,5 @@
 import React from "react";
 import { Typography, Button, Box, Grid } from "@mui/material";
-import { Link } from "react-router-dom";
 import imageSection1 from "../media/images/image_section_1.png";
 import FullHeightSection from './reusable_components/FullHeightSection';
 
@@ -25,7 +24,12 @@ function PresentationSection() {
                               Our goal is to build a facility of upmost quality, keeping in mind both recreational and competitive players. It will feature a beach-like environment with professional-grade sand courts, just like those used in international tournaments.
               </Typography>
               <Box display="inline-block">
-                <Button component={Link} to="/" variant="contained" color="primary">
+                <Button variant="contained" color="primary"  onClick={() => {
+                const section = document.getElementById("membershipsection");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}>
                                   Become a member
                 </Button>
               </Box>

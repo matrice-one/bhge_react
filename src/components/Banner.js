@@ -1,6 +1,5 @@
 import React from "react";
 import { Typography, Button, Box, useTheme, useMediaQuery } from "@mui/material";
-import { Link } from "react-router-dom";
 import FullHeightSection from './reusable_components/FullHeightSection';
 
 function Banner() {
@@ -36,11 +35,18 @@ function Banner() {
             </Box>
             <Box pb={{ xs: 0, sm: 1, md: 2 }}></Box>
             <Button 
-              component={Link}  
+              // component={Link}  
               sx={{ borderRadius: "16px" }} 
-              to="/" 
+              // to="/" 
               variant="contained" 
               color="primary"
+
+              onClick={() => {
+                const section = document.getElementById("membershipsection");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
             >
               How to participate
             </Button>
