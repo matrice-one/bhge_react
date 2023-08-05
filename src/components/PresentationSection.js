@@ -5,6 +5,8 @@ import FullHeightSection from './reusable_components/FullHeightSection';
 
 
 function PresentationSection() {
+
+
   return (
     <Box id="presentationsection" sx={{ bgcolor: "tertiary.main" }}>
       <FullHeightSection>
@@ -30,7 +32,8 @@ function PresentationSection() {
                   section.scrollIntoView({ behavior: "smooth" });
                 }
               }}>
-                                  Become a member
+                                  
+                Become a member
                 </Button>
               </Box>
               </Box>
