@@ -60,9 +60,6 @@ function FormModal({ buttonText }) {
           </Button>
         </form>
       )}
-      {/* <Button variant="contained" color="primary" onClick={handleClose} sx={{ mt: 2 }}>
-        Close
-      </Button> */}
     </Box>
   );
 

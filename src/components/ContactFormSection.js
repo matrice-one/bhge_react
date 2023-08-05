@@ -1,14 +1,17 @@
 import { Box, TextField, Button, Grid, Typography } from "@mui/material";
 import { useForm, ValidationError } from '@formspree/react';
+import FullHeightSection from './reusable_components/FullHeightSection';
 
 function ContactFormSection() {
   const [state, handleSubmit] = useForm("moqoqnpz"); // replace "moqoqnpz" with your form ID
 
   return(
+    <FullHeightSection bgcolor={"primary.main"}>
     <Grid id="contactsection" container spacing={0} bgcolor={"primary.main"}>
       <Grid item xs={12} sm={6}>
         <Box p={4}>
           <Typography variant='h3' gutterBottom >Contact Us</Typography>
+          <Box pt={8}>
           <Typography variant='body1'>Beach Center Geneva is an association of local beach volleyball lovers with a common goal. Don’t hesitate to get in touch!</Typography>
           {state.succeeded ? (
             <Typography color={'tertiary'} variant='h5'>Thanks for your message! We will get back to you as soon as possible.</Typography>
@@ -31,13 +34,12 @@ function ContactFormSection() {
               </Button>
             </form>
           )}
-        </Box>
-      </Grid>
-      <Grid item xs={12} sm={6} md={3}>
-        <Box p={4}>
+          </Box>
         </Box>
       </Grid>
     </Grid>
+    </FullHeightSection>
+
   );
 }
 

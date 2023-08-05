@@ -18,7 +18,7 @@ const HomePage = () => {
           backgroundImage: `url(${bannerImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "50vh" // This will make the div take the full height of the viewport
+          height: "100vh" // This will make the div take the full height of the viewport
                     
         }}
       >

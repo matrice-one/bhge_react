@@ -15,22 +15,31 @@ const theme = createTheme({
   typography: {
     fontFamily: "Staatliches",
     body1: {
-      fontFamily: "Mohave"
+      fontFamily: "Roboto",
+      fontSize: "18px",
+      lineHeight: 1.5,
+    },
+    h1: {
+      fontSize: '4rem',
+    },
+    h2: {
+      fontSize: '3.5rem',
+    },
+    h3: {
+      fontSize: '3rem',
+    },
+    h4: {
+      fontSize: '2.5rem',
+    },
+    h5: {
+      fontSize: '2rem',
     },
     h6: {
       fontFamily: "Mohave",
-      fontSize: 32
+      fontSize: '1.5rem',
     },
-    // fontSize: 16,
-    // h1: {
-    //   fontSize: '2.3rem',
-    // },
-    // h2: {
-    //   fontSize: '2rem',
-    // },
-    // h3: {
-    // }
   }
+  
 }
 );
 

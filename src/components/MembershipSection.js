@@ -3,6 +3,8 @@ import React from "react";
 import { Typography, } from "@mui/material";
 import { Box, Grid, } from "@mui/material";
 import FormModal from "./FormModal";
+import FullHeightSection from './reusable_components/FullHeightSection';
+
 
 function MembershipSection() {
   const sections = [
@@ -12,25 +14,28 @@ function MembershipSection() {
     
   return (
     <Box id="membershipsection" p={4} bgcolor={"secondary.main"}>
-      <Typography color={"primary.main"} variant="h3" gutterBottom>
-            Become a member
-      </Typography>
-      <Grid container spacing={20}>
-        {sections.map((section, index) => (
-          <Grid item xs={12} md={6} key={index}>
-            <Typography color={"primary.main"} variant="h5" gutterBottom>
-              {section.title}
-            </Typography>
-            <Typography color={"primary.main"} variant="h6" gutterBottom>
-              {section.subtitle}
-            </Typography>
-            <Typography color={"primary.main"} variant="body1" gutterBottom>
-              {section.description}
-            </Typography>
-            <FormModal buttonText= {section.buttonText} />
-          </Grid>
-        ))}
-      </Grid>
+      <FullHeightSection>
+        <Typography color={"primary.main"} variant="h3" gutterBottom>
+              Become a member
+        </Typography>
+        <Grid container spacing={20} pt={6}>
+          {sections.map((section, index) => (
+            <Grid item xs={12} md={6} key={index}>
+              <Typography color={"primary.main"} variant="h5" gutterBottom>
+                {section.title}
+              </Typography>
+              <Typography color={"primary.main"} variant="h6" gutterBottom>
+                {section.subtitle}
+              </Typography>
+              <Typography color={"primary.main"} variant="body1" gutterBottom>
+                {section.description}
+              </Typography>
+              <FormModal buttonText= {section.buttonText} />
+            </Grid>
+          ))}
+        </Grid>
+      </FullHeightSection>
+
     </Box>
   );
 }
