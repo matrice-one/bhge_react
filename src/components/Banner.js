@@ -1,24 +1,7 @@
-// Banner.js
 import React from "react";
 import { Typography, Button, Box, useTheme, useMediaQuery } from "@mui/material";
-import { animateScroll as scroll } from "react-scroll";
-
-function useSmoothScroll() {
-  return function (to) {
-    const element = document.getElementById(to);
-    if (element) {
-      const top = element.getBoundingClientRect().top + window.pageYOffset;
-      scroll.scrollTo(top, {
-        duration: 500,
-        delay: 0,
-        smooth: "easeInOutQuart"
-      });
-    }
-  };
-}
 
 function Banner() {
-  const scrollTo = useSmoothScroll();
 
   const theme = useTheme();
   const matchesSmUp = useMediaQuery(theme.breakpoints.up("sm"));
@@ -45,9 +28,14 @@ function Banner() {
           </Box>
           <Box pb={{ xs: 0, sm: 1, md: 2 }}>
           </Box>
-          <Button onClick={() => scrollTo("membershipsection")} variant="contained" color="primary">
-              How to participate
-            </Button>
+          <Button  sx={{ borderRadius: "16px" }} variant="contained" color="primary" onClick={() => {
+                const section = document.getElementById("membershipsection");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}>
+                             How to participate
+          </Button>
         </Box>
       </Box>
     </Box>

@@ -22,7 +22,8 @@ function FormModal({ buttonText }) {
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: 400,
+        width: '70%',
+        maxWidth: '400px',
         bgcolor: 'background.paper',
         border: '2px solid #000',
         boxShadow: 24,
@@ -60,9 +61,6 @@ function FormModal({ buttonText }) {
           </Button>
         </form>
       )}
-      {/* <Button variant="contained" color="primary" onClick={handleClose} sx={{ mt: 2 }}>
-        Close
-      </Button> */}
     </Box>
   );
 

@@ -49,7 +49,7 @@ export default function Header() {
       <Toolbar padding>
         <Typography color={"primary"} variant="h5" sx={{ flexGrow: 1 }}>
           <img src={Logo} alt="logo" style={{ height: "60px",}} /> {/* adjust the height as needed */}
-          BEACH VOLLEY HALLES GENEVA
+          BEACH HALLE GENEVE
         </Typography>
         {isMobile ? (
           <>
