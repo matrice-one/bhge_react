@@ -1,31 +1,49 @@
-name: Deploy to server
+name: CI/CD
+
 on:
   push:
     branches:
       - master
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Install Dependencies
-      run: npm install
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.x'
 
-    - name: Build
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build React app
       run: npm run build
 
-    - name: Archive Production Artifact
-      run: tar -czvf react_beach_halles.tar.gz build
+    - name: Archive production artifacts
+      run: tar -czvf react_beach_halles.tar.gz ./build
 
-    - name: Deploy to server
+    - name: Upload artifact to Github
+      uses: actions/upload-artifact@v2
+      with:
+        name: react_beach_halles
+        path: ./react_beach_halles.tar.gz
+
+    - name: List contents of tar file
+      run: tar -tvf react_beach_halles.tar.gz  
+
+    - name: SCP artifact and extract on droplet
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.SERVER_HOST }}
-        username: ${{ secrets.SERVER_USERNAME }}
-        password: ${{ secrets.SERVER_PASSWORD }}
+        host: ${{ secrets.DROPLET_IP }}
+        username: ${{ secrets.DROPLET_USER }}
+        password: ${{ secrets.DROPLET_PASSWORD }}
+        port: 22
         script: |
-          scp react_beach_halles.tar.gz ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:/tmp/
-          ssh -v ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} 'rm -rf /var/www/react_beach_halles/ && mkdir -p /var/www/react_beach_halles/ && tar -xzvf /tmp/react_beach_halles.tar.gz -C /var/www/react_beach_halles/ && sudo systemctl restart nginx'
+          set -x
+          scp -v react_beach_halles.tar.gz ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_IP }}:/tmp/
+          ssh -v ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_IP }} 'rm -rf /var/www/react_beach_halles/ && mkdir -p /var/www/react_beach_halles/ && tar -xzvf /tmp/react_beach_halles.tar.gz -C /var/www/react_beach_halles/ && sudo systemctl restart nginx'
