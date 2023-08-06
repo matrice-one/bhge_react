@@ -11,7 +11,7 @@ function ContactFormSection() {
       <Grid item xs={12} sm={6}>
         <Box p={4}>
           <Typography variant='h3' gutterBottom >Contact Us</Typography>
-          <Box pt={8}>
+          <Box pt={6}>
           <Typography variant='body1'>Beach Center Geneva is an association of local beach volleyball lovers with a common goal. Don’t hesitate to get in touch!</Typography>
           {state.succeeded ? (
             <Typography color={'tertiary'} variant='h5'>Thanks for your message! We will get back to you as soon as possible.</Typography>
