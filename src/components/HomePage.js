@@ -28,12 +28,12 @@ const HomePage = () => {
             height: "100%",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "flex-start", // Aligns Header to the top
-            alignItems: "flex-start",
+            justifyContent: "space-between",
           }}
         >
           <Header />
           <Banner />
+           <div style={{ flex: 0.5}}></div>
         </Box>
       </Box>
       <PresentationSection />
