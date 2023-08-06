@@ -6,7 +6,7 @@ import AboutUsPage from "./components/AboutUsPage.js"
 
 const App = () => {
   return (
-    <Router basename="/bhge">
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about-us" element={<AboutUsPage />} />

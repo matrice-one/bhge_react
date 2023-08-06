@@ -1,0 +1,62 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.x'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build React app
+      run: npm run build
+
+    - name: Archive production artifacts
+      run: |
+        tar -czvf react_beach_halles.tar.gz build
+        mkdir deploy
+        mv react_beach_halles.tar.gz deploy/
+
+    - name: Upload artifacts to the server
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.DROPLET_IP }}
+        username: ${{ secrets.DROPLET_USER }}
+        password: ${{ secrets.DROPLET_PASSWORD }}
+        source: "deploy/react_beach_halles.tar.gz"
+        target: "/tmp"
+
+    - name: Check if file exists on server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.DROPLET_IP }}
+        username: ${{ secrets.DROPLET_USER }}
+        password: ${{ secrets.DROPLET_PASSWORD }}
+        script: ls -la /tmp
+
+    - name: Deploy to server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.DROPLET_IP }}
+        username: ${{ secrets.DROPLET_USER }}
+        password: ${{ secrets.DROPLET_PASSWORD }}
+        script: |
+          sudo rm -rf /var/www/react_beach_halles || true
+          sudo mkdir -p /var/www/react_beach_halles
+          sudo tar -xzvf /tmp/deploy/react_beach_halles.tar.gz -C /var/www/react_beach_halles
+          sudo mv /var/www/react_beach_halles/build/* /var/www/react_beach_halles/
+          sudo rm -rf /var/www/react_beach_halles/build
+          sudo systemctl restart nginx
