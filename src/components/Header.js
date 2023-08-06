@@ -19,7 +19,8 @@ function useSmoothScroll() {
   };
 }
 
-export default function Header() {
+// eslint-disable-next-line react/prop-types
+export default function Header({ transparent = true }) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [drawerOpen, setDrawerOpen] = React.useState(false);
@@ -38,6 +39,9 @@ export default function Header() {
     <ListItem button onClick={() => {scrollTo("membershipsection"); handleDrawerToggle();}}>
       <ListItemText primary="Become a member" />
     </ListItem>
+    <ListItem button onClick={() => {scrollTo("aboutussection"); handleDrawerToggle();}}>
+      <ListItemText primary="About us" />
+    </ListItem>
     <ListItem button onClick={() => {scrollTo("contactsection"); handleDrawerToggle();}}>
       <ListItemText primary="Contact us" />
     </ListItem>
@@ -45,8 +49,8 @@ export default function Header() {
   );
 
   return (
-    <AppBar position="static" elevation={0} style={{paddingLeft: "2rem", paddingRight: "2rem", paddingTop: "1rem",backgroundColor: "transparent" }}>
-      <Toolbar padding>
+    <AppBar position="static" elevation={0} style={{ backgroundColor: transparent ? "transparent" : "black" }}>
+      <Toolbar>
         <Typography color={"primary"} variant="h5" sx={{ flexGrow: 1 }}>
           <img src={Logo} alt="logo" style={{ height: "60px",}} /> {/* adjust the height as needed */}
           BEACH HALLE GENEVE
@@ -71,9 +75,10 @@ export default function Header() {
           </>
         ) : (
           <Box display="flex" gap={8}>
-            <Button onClick={() => scrollTo("presentationsection")} smooth={true} color="primary"><Typography color={"primary"} variant="h5" sx={{ flexGrow: 1 }}> The project </Typography></Button>
-            <Button onClick={() => scrollTo("membershipsection")} color="primary"><Typography color={"primary"} variant="h5" sx={{ flexGrow: 1 }}> Become a member </Typography></Button>
-            <Button onClick={() => scrollTo("contactsection")} color="primary"><Typography color={"primary"} variant="h5" sx={{ flexGrow: 1 }}> Contact us </Typography></Button>
+            <Button onClick={() => scrollTo("presentationsection")} smooth={true} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> The project </Typography></Button>
+            <Button onClick={() => scrollTo("membershipsection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> Become a member </Typography></Button>
+            <Button onClick={() => scrollTo("aboutussection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>About us </Typography></Button>
+            <Button onClick={() => scrollTo("contactsection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> Contact us </Typography></Button>
           </Box>
         )}
       </Toolbar>
