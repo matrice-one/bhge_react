@@ -6,11 +6,13 @@ function ContactFormSection() {
   const [state, handleSubmit] = useForm("moqoqnpz"); // replace "moqoqnpz" with your form ID
 
   return(
-    <FullHeightSection bgcolor={"primary.main"}>
+    <div id="contactussection">
+    <Box p={4} bgcolor={"primary.main"}>
+    
       <Container maxWidth="lg">
+      <FullHeightSection bgcolor={"primary.main"}>
         <Grid id="contactsection" container spacing={0} bgcolor={"primary.main"}>
           <Grid item xs={12} sm={6}>
-            <Box p={4}>
               <Typography variant='h3' gutterBottom >Contact Us</Typography>
               <Box pt={6}>
               <Typography variant='body1'>Beach Center Geneva is an association of local beach volleyball lovers with a common goal. Don’t hesitate to get in touch!</Typography>
@@ -36,11 +38,13 @@ function ContactFormSection() {
                 </form>
               )}
               </Box>
-            </Box>
           </Grid>
         </Grid>
+        </FullHeightSection>
       </Container>
-    </FullHeightSection>
+    
+    </Box>
+    </div>
 
   );
 }
