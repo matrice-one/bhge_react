@@ -35,7 +35,9 @@ jobs:
         password: ${{ secrets.DROPLET_PASSWORD }}
         port: 22
         script: |
-          scp $GITHUB_WORKSPACE/react_beach_halles.tar /tmp/  # Modify this line, so it uploads the tarball to the /tmp directory
-          rm -rf /var/www/react_beach_halles/
+          scp $GITHUB_WORKSPACE/react_beach_halles.tar /tmp/
+          rm -rf /var/www/react_beach_halles/ || true
+          mkdir -p /var/www/react_beach_halles/
           tar -xvf /tmp/react_beach_halles.tar -C /var/www/react_beach_halles 
           sudo systemctl restart nginx
+
