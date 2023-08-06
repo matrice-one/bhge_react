@@ -25,18 +25,24 @@ jobs:
       run: npm run build
 
     - name: Archive production artifacts
-      run: tar -czvf react_beach_halles.tar.gz ./build
+      run: tar -czvf react_beachfront_project ./build
 
-    - name: Upload artifact to Github
+    - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: react_beach_halles
-        path: ./react_beach_halles.tar.gz
+        name: react_beachfront_project
+        path: ./react_beachfront_project
 
     - name: List contents of tar file
-      run: tar -tvf react_beach_halles.tar.gz  
+      run: tar -tvf react_beachfront_project  
 
-    - name: SCP artifact and extract on droplet
+    - name: Download artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: react_beachfront_project
+        path: .
+
+    - name: Upload artifacts and extract
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.DROPLET_IP }}
@@ -44,6 +50,8 @@ jobs:
         password: ${{ secrets.DROPLET_PASSWORD }}
         port: 22
         script: |
-          set -x
-          scp -v react_beach_halles.tar.gz ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_IP }}:/tmp/
-          ssh -v ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_IP }} 'rm -rf /var/www/react_beach_halles/ && mkdir -p /var/www/react_beach_halles/ && tar -xzvf /tmp/react_beach_halles.tar.gz -C /var/www/react_beach_halles/ && sudo systemctl restart nginx'
+          scp -v $GITHUB_WORKSPACE/react_beachfront_project /tmp/
+          rm -rf /var/www/react_beachfront_project/ || true
+          mkdir -p /var/www/react_beachfront_project/
+          tar -xzvf /tmp/react_beachfront_project -C /var/www/react_beachfront_project 
+          sudo systemctl restart nginx
