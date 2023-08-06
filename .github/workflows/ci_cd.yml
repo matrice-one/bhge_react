@@ -26,7 +26,8 @@ jobs:
 
     - name: Archive production artifacts
       run: |
-        tar -czvf react_beach_halles.tar.gz build
+        cd build
+        tar -czvf react_beach_halles.tar.gz .
         mkdir deploy
         mv react_beach_halles.tar.gz deploy/
 
