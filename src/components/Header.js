@@ -39,6 +39,9 @@ export default function Header({ transparent = true }) {
     <ListItem button onClick={() => {scrollTo("membershipsection"); handleDrawerToggle();}}>
       <ListItemText primary="Become a member" />
     </ListItem>
+    <ListItem button onClick={() => {scrollTo("aboutussection"); handleDrawerToggle();}}>
+      <ListItemText primary="About us" />
+    </ListItem>
     <ListItem button onClick={() => {scrollTo("contactsection"); handleDrawerToggle();}}>
       <ListItemText primary="Contact us" />
     </ListItem>
@@ -74,6 +77,7 @@ export default function Header({ transparent = true }) {
           <Box display="flex" gap={8}>
             <Button onClick={() => scrollTo("presentationsection")} smooth={true} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> The project </Typography></Button>
             <Button onClick={() => scrollTo("membershipsection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> Become a member </Typography></Button>
+            <Button onClick={() => scrollTo("aboutussection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>About us </Typography></Button>
             <Button onClick={() => scrollTo("contactsection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> Contact us </Typography></Button>
           </Box>
         )}

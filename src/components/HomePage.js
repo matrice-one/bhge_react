@@ -9,6 +9,7 @@ import FeaturesSection from "./FeaturesSection";
 import GallerySection from "./GallerySection";
 import ContactFormSection from "./ContactFormSection";
 import Footer from "./Footer";
+import AboutUsPage from "./AboutUsPage"
 
 const HomePage = () => {
   return (
@@ -40,6 +41,7 @@ const HomePage = () => {
       <FeaturesSection />
       <MembershipSection />
       <GallerySection />
+      <AboutUsPage/>
       <ContactFormSection />
       <Footer />
     </div>

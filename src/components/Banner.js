@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Button, Box, useTheme, useMediaQuery } from "@mui/material";
+import { Typography, Button, Box, useTheme, useMediaQuery, Container } from "@mui/material";
 
 function Banner() {
 
@@ -18,26 +18,28 @@ function Banner() {
 
   return (
     <Box mt={{ xs: 12, sm: 0, md: 0 }}>
-      <Box padding={{ xs: 2, sm: 4, md: 8 }} pt={2} textAlign="left" >
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="flex-start" height="100%">
-          <Box pb={2}>
-            <Typography color={"primary"} variant={variant} align="left">
-                            Indoor Beach Volleyball <br></br>
-                            coming soon to Geneva!
-            </Typography>
+      <Container maxWidth="lg">
+        <Box pt={2} textAlign="left" >
+          <Box display="flex" flexDirection="column" justifyContent="center" alignItems="flex-start" height="100%">
+            <Box pb={2}>
+              <Typography color={"primary"} variant={variant} align="left">
+                              Indoor Beach Volleyball <br></br>
+                              coming soon to Geneva!
+              </Typography>
+            </Box>
+            <Box pb={{ xs: 0, sm: 1, md: 2 }}>
+            </Box>
+            <Button  sx={{ borderRadius: "16px" }} variant="contained" color="primary" onClick={() => {
+                  const section = document.getElementById("membershipsection");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}>
+                How to participate
+            </Button>
           </Box>
-          <Box pb={{ xs: 0, sm: 1, md: 2 }}>
-          </Box>
-          <Button  sx={{ borderRadius: "16px" }} variant="contained" color="primary" onClick={() => {
-                const section = document.getElementById("membershipsection");
-                if (section) {
-                  section.scrollIntoView({ behavior: "smooth" });
-                }
-              }}>
-                             How to participate
-          </Button>
         </Box>
-      </Box>
+      </Container>
     </Box>
   );
 }
