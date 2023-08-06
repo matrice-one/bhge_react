@@ -56,5 +56,5 @@ jobs:
         script: |
           sudo rm -rf /var/www/react_beach_halles || true
           sudo mkdir -p /var/www/react_beach_halles
-          sudo tar -xzvf /tmp/react_beach_halles.tar.gz -C /var/www/react_beach_halles 
+          sudo tar -xzvf /tmp/deploy/react_beach_halles.tar.gz -C /var/www/react_beach_halles
           sudo systemctl restart nginx
