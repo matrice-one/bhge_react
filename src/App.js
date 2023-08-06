@@ -5,7 +5,7 @@ import HomePage from "./components/HomePage.js";
 
 const App = () => {
   return (
-    <Router basename="/bhge">
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
