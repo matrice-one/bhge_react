@@ -1,0 +1,40 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.x'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build React app
+      run: npm run build
+
+    - name: Archive production artifacts
+      run: tar -cvf react_beach_halles.tar ./build  
+
+    - name: Upload artifacts and extract
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.DROPLET_IP }}
+        username: ${{ secrets.DROPLET_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          scp $GITHUB_WORKSPACE/react_beach_halles.tar /tmp/  # Modify this line, so it uploads the tarball to the /tmp directory
+          rm -rf /var/www/react_beach_halles/
+          tar -xvf /tmp/react_beach_halles.tar -C /var/www/react_beach_halles 
+          sudo systemctl restart nginx
