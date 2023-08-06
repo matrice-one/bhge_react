@@ -26,8 +26,7 @@ jobs:
 
     - name: Archive production artifacts
       run: |
-        cd ../build
-        tar -czvf react_beach_halles.tar.gz .
+        tar -czvf react_beach_halles.tar.gz build
         mkdir deploy
         mv react_beach_halles.tar.gz deploy/
 
@@ -57,5 +56,7 @@ jobs:
         script: |
           sudo rm -rf /var/www/react_beach_halles || true
           sudo mkdir -p /var/www/react_beach_halles
-          sudo tar -xzvf /tmp/deploy/react_beach_halles.tar.gz -C /var/www/react_beach_halles
+          sudo tar -xzvf /tmp/react_beach_halles.tar.gz -C /var/www/react_beach_halles
+          sudo mv /var/www/react_beach_halles/build/* /var/www/react_beach_halles/
+          sudo rm -rf /var/www/react_beach_halles/build
           sudo systemctl restart nginx
