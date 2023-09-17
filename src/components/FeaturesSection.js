@@ -1,12 +1,15 @@
 import { Box, Card, CardContent, Grid, Typography,Container } from "@mui/material";
 import FullHeightSection from './reusable_components/FullHeightSection';
+import { useTranslation } from "react-i18next";
 
 function FeaturesSection() {
+  const { t } = useTranslation();
+
   const features = [
-    { title: "Playing all year long", description: "A protected facility means enjoying beach volleyball anytime of the year, regardless of the weather conditions." },
-    { title: "Health & Fitness", description: "Physical activity in the sand contributes to better cardiovascular fitness, improved muscle tone, and enhanced hand-eye coordination. Everyone, from kids to athletes can benefit!" },
-    { title: "Skill Development", description: "By working with existing programs and coaches, as well as introducing our own, we plan to offer workshops, and classes players of all levels to improve their skills." },
-    { title: "Events & Tournaments", description: "From national beach volleyball tournaments to private events, we will provide a space for players of all levels to showcase their skills and enjoy high-energy games." },
+    { title: t("FeaturesSection.features.playingAllYear"), description: t("FeaturesSection.featureDescriptions.playingAllYear")},
+    { title:  t("FeaturesSection.features.healthAndFitness"), description:t("FeaturesSection.featureDescriptions.playingAllYear") },
+    { title:  t("FeaturesSection.features.skillDevelopment"), description: t("FeaturesSection.featureDescriptions.playingAllYear") },
+    { title:  t("FeaturesSection.features.eventsAndTournaments"), description: t("FeaturesSection.featureDescriptions.playingAllYear") },
   ];
 
   return (
@@ -14,7 +17,7 @@ function FeaturesSection() {
       <Container maxWidth="lg">
         <FullHeightSection>
             <Typography variant="h3" color={"secondary.main"} gutterBottom>
-              Indoor beach volley means...
+              {t("FeaturesSection.title")}
             </Typography>
               <Grid container spacing={4} pt={6}>
                 {features.map((feature, index) => (

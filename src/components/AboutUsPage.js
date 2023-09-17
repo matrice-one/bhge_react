@@ -1,7 +1,10 @@
 import FullHeightSection from "./reusable_components/FullHeightSection"
 import React from "react"
 import { Box, Typography, useTheme,useMediaQuery, Container } from "@mui/material"
+import { useTranslation } from "react-i18next";
+
 const HomePage = () => {
+  const {t} = useTranslation();
     const theme = useTheme();
     const matchesSmUp = useMediaQuery(theme.breakpoints.up("sm"));
     const matchesMdUp = useMediaQuery(theme.breakpoints.up("md"));
@@ -21,7 +24,7 @@ const HomePage = () => {
             <Container maxWidth="lg">
                 <FullHeightSection bgcolor={"tertiary.main"}>  
                     <Typography color={"primary"} variant={variant} align="left">
-                        About Us
+                        {t("AboutUsSection.aboutUs")}
                     </Typography>
                     <Typography color={"primary"} variant={'body1'} align="justify">
                         We are delighted to introduce you to the Geneva Beach Halles Association, an ambitious and innovative project created with the aim of promoting and developing various sand sports, particularly beach volleyball, beach soccer, and beach tennis, as well as sand fitness training for all athletes, in the canton of Greater Geneva and in French-speaking Switzerland.
@@ -39,7 +42,7 @@ const HomePage = () => {
                         Join us and support the Geneva Beach Halles Association, contributing to creating a bright and dynamic future for beach volleyball, beach soccer, beach tennis, and sand fitness training in the Greater Geneva region and in French-speaking Switzerland! So, shall we  &quot;hit the sand &quot;?
                         <br></br><br></br>
                         <br></br><br></br>
-                        Amandine, Adrien, Bryan, Carlotta, Dario, Ilaria, Neigeline, Vittorio 
+                        Amandine, Adrien, Bryan, Carlotta, Dario, Ilaria, Julietta, Neigeline, Vittorio 
                     </Typography>
                 </FullHeightSection>
         </Container> 

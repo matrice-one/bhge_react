@@ -4,6 +4,7 @@ import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer, List, Lis
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../media/images/logo.png";
 import { animateScroll as scroll } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 function useSmoothScroll() {
   return function (to) {
@@ -21,6 +22,7 @@ function useSmoothScroll() {
 
 // eslint-disable-next-line react/prop-types
 export default function Header({ transparent = true }) {
+  const { t } = useTranslation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [drawerOpen, setDrawerOpen] = React.useState(false);
@@ -34,16 +36,16 @@ export default function Header({ transparent = true }) {
   const drawer = (
     <List>
     <ListItem button onClick={() => {scrollTo("presentationsection"); handleDrawerToggle();}}>
-      <ListItemText primary="The project" />
+      <ListItemText primary={t("Header.project")} />
     </ListItem>
     <ListItem button onClick={() => {scrollTo("membershipsection"); handleDrawerToggle();}}>
-      <ListItemText primary="Become a member" />
+      <ListItemText primary={t("Header.becomeAMember")}/>
     </ListItem>
     <ListItem button onClick={() => {scrollTo("aboutussection"); handleDrawerToggle();}}>
-      <ListItemText primary="About us" />
+      <ListItemText primary={t("Header.aboutUs")} />
     </ListItem>
     <ListItem button onClick={() => {scrollTo("contactsection"); handleDrawerToggle();}}>
-      <ListItemText primary="Contact us" />
+      <ListItemText primary={t("Header.contactUs")}/>
     </ListItem>
   </List>
   );

@@ -6,8 +6,12 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 import { useForm, ValidationError } from '@formspree/react';
+import { useTranslation } from "react-i18next";
+
 
 function FormModal({ buttonText }) {
+  const { t } = useTranslation();
+
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(true);
@@ -32,14 +36,14 @@ function FormModal({ buttonText }) {
       }}
     >
       <Typography id="modal-modal-title" variant="h6" component="h2">
-        Membership Request Form
+          {t("FormModal.membershipRequest")}
       </Typography>
       <Typography id="modal-modal-description" variant="body1" component="p" gutterBottom>
-        Enter your details so we can contact you for the next steps.
+          {t("FormModal.description")}
       </Typography>
       {state.succeeded ? (
         <Typography color={'tertiary'} variant='h5'>
-          Thanks for your request. We will get in touch soon!
+          {t("FormModal.successMessage")}
         </Typography>
       ) : (
       <form onSubmit={handleSubmit}>

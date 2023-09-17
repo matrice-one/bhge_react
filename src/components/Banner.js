@@ -1,7 +1,10 @@
 import React from "react";
 import { Typography, Button, Box, useTheme, useMediaQuery, Container } from "@mui/material";
+import { Trans } from "react-i18next";
 
 function Banner() {
+
+  // const {t} = useTranslation();
 
   const theme = useTheme();
   const matchesSmUp = useMediaQuery(theme.breakpoints.up("sm"));
@@ -23,8 +26,7 @@ function Banner() {
           <Box display="flex" flexDirection="column" justifyContent="center" alignItems="flex-start" height="100%">
             <Box pb={2}>
               <Typography color={"primary"} variant={variant} align="left">
-                              Indoor Beach Volleyball <br></br>
-                              coming soon to Geneva!
+                <Trans i18nKey="BannerSection.teasingMessage" />
               </Typography>
             </Box>
             <Box pb={{ xs: 0, sm: 1, md: 2 }}>
@@ -35,7 +37,7 @@ function Banner() {
                     section.scrollIntoView({ behavior: "smooth" });
                   }
                 }}>
-                How to participate
+                <Trans i18nKey="BannerSection.participateMessage" />
             </Button>
           </Box>
         </Box>
