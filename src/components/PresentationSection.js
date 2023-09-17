@@ -2,10 +2,10 @@ import React from "react";
 import { Typography, Button, Box, Grid, Container } from "@mui/material";
 import imageSection1 from "../media/images/image_section_1.png";
 import FullHeightSection from './reusable_components/FullHeightSection';
-
+import { useTranslation } from 'react-i18next';
 
 function PresentationSection() {
-
+  const { t } = useTranslation();
 
   return (
     <Box id="presentationsection" sx={{ bgcolor: "tertiary.main" }}>
@@ -20,11 +20,11 @@ function PresentationSection() {
             <Grid item xs={12} md={4}>
               <Box p={4} bgcolor='tertiary.main' display="flex" flexDirection="column" justifyContent="center">
                 <Typography color={"primary"} variant="h3" gutterBottom>
-                                Our project
+                  {t("PresentationSection.ourProject")}
                 </Typography>
                 <Box pt={6}>
                 <Typography color={"primary"} variant="body1" gutterBottom>
-                                Our goal is to build a facility of upmost quality, keeping in mind both recreational and competitive players. It will feature a beach-like environment with professional-grade sand courts, just like those used in international tournaments.
+                  {t("PresentationSection.projectDescription")}
                 </Typography>
                 <Box display="inline-block">
                   <Button variant="contained" color="primary"  onClick={() => {

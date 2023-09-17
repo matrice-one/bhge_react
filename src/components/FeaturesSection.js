@@ -7,9 +7,9 @@ function FeaturesSection() {
 
   const features = [
     { title: t("FeaturesSection.features.playingAllYear"), description: t("FeaturesSection.featureDescriptions.playingAllYear")},
-    { title:  t("FeaturesSection.features.healthAndFitness"), description:t("FeaturesSection.featureDescriptions.playingAllYear") },
-    { title:  t("FeaturesSection.features.skillDevelopment"), description: t("FeaturesSection.featureDescriptions.playingAllYear") },
-    { title:  t("FeaturesSection.features.eventsAndTournaments"), description: t("FeaturesSection.featureDescriptions.playingAllYear") },
+    { title:  t("FeaturesSection.features.healthAndFitness"), description:t("FeaturesSection.featureDescriptions.healthAndFitness") },
+    { title:  t("FeaturesSection.features.skillDevelopment"), description: t("FeaturesSection.featureDescriptions.skillDevelopment") },
+    { title:  t("FeaturesSection.features.eventsAndTournaments"), description: t("FeaturesSection.featureDescriptions.eventsAndTournaments") },
   ];
 
   return (
