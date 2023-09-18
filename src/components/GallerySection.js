@@ -5,7 +5,9 @@ import imageGallery3 from "../media/images/happy_dar.jpeg";
 import imageGallery4 from "../media/images/gallerie_picture_4.png";
 import FullHeightSection from './reusable_components/FullHeightSection';
 
+
 function GallerySection() {
+  
   return (
     <FullHeightSection bgcolor={"black"}>
         <Grid container spacing={0} bgcolor={"black"}>

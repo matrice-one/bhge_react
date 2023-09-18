@@ -2,7 +2,7 @@ import React from "react";
 import { Box, } from "@mui/material";
 
 // eslint-disable-next-line react/prop-types  
-  function FullHeightSection({ children, bgcolor, }) {
+  function FullHeightSection({ children, bgcolor }) {
     return (
       <Box sx={{ 
         minHeight: ['auto', 'auto', '100vh'],

@@ -1,0 +1,74 @@
+{
+  "BannerSection": {
+      "teasingMessagePart1": "Beach volley indoor",
+      "teasingMessagePart2": "bientôt à Genève!",
+      "participateMessage": "Comment participer"
+  },
+  "AboutUsSection": {
+    "aboutUs": "À Propos De Nous",
+    "introduction": "Nous sommes ravis de vous présenter l'Association Geneva Beach Halles, un projet ambitieux et innovant créé dans le but de promouvoir et de développer divers sports de sable, en particulier le beach volley, le beach-soccer, le beach-tennis, ainsi que l'entraînement physique sur sable pour tous les athlètes, dans le canton du Grand Genève et en Suisse romande.",
+    "projectDescription": "Geneva Beach Halles est né de l'initiative d'un groupe d'enthousiastes qui, après des années d'essais et de demandes, ont décidé de joindre leurs forces pour créer un centre sportif intérieur dédié à ces sports. L'association vise à trouver un emplacement adapté, que ce soit dans des espaces publics avec le soutien des autorités locales ou dans des espaces privés dans des zones industrielles ou agricoles, afin de fournir une infrastructure accessible, durable et de qualité toute l'année pour les joueurs et athlètes de tous niveaux.",
+    "projectGuidance": "Le projet est guidé par le slogan 'Par des beachers - pour des beachers', mettant en avant la passion et l'enthousiasme des pratiquants et des fans de ces sports. Le manque d'installations appropriées dans la région de Genève et tout au long de l'arc lémanique a conduit un nombre croissant de joueurs à se rallier à cette cause, soutenant fermement la réalisation du centre sportif.",
+    "projectAim": "Geneva Beach Halles vise à être la référence pour les joueurs et les passionnés de beach volley, de beach-soccer et de beach-tennis, offrant une infrastructure de qualité, durable et autonome ainsi qu'une académie dédiée à la formation des nouvelles générations de talents locaux. Grâce à la collaboration avec les associations cantonales, les fédérations sportives et les soutiens privés, le projet est en passe de grandir et de devenir un symbole d'excellence en Suisse romande et sur le territoire du Grand Genève.",
+    "projectCreation": "La création de Geneva Beach Halles apportera des avantages significatifs à la communauté sportive et à cette région, augmentant le nombre de pratiquants, la qualité des joueurs et attirant le tourisme sportif. De plus, le centre sportif pourra accueillir des compétitions de niveau national et international, faisant de Genève une référence mondiale pour ces sports. De plus, l'association vise à promouvoir l'entraînement physique sur sable pour tous les athlètes, offrant une expérience unique et bénéfique pour la condition physique et la santé.",
+    "joinUs": "Rejoignez-nous et soutenez l'Association Geneva Beach Halles, contribuant à créer un avenir brillant et dynamique pour le beach volley, le beach-soccer, le beach-tennis et l'entraînement physique sur sable dans la région du Grand Genève et en Suisse romande! Alors, allons fouler le sable?",
+    "teamMembers": "Amandine, Adrien, Bryan, Carlotta, Dario, Ilaria, Julietta, Neigeline, Vittorio"
+  },  
+  "ContactFormSection": {
+      "contactUs": "Contactez-nous",
+      "description": "Beach Center Geneva est une association d'amateurs de beach volley locaux avec un objectif commun. N'hésitez pas à nous contacter!",
+      "successMessage": "Merci pour votre message! Nous vous répondrons dès que possible.",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Adresse e-mail",
+      "whatsapp": "Numéro WhatsApp (si vous souhaitez rejoindre le groupe)",
+      "message": "Message",
+      "submit": "Envoyer"
+  },
+  "FeaturesSection": {
+      "title": "Le volleyball de plage intérieur signifie...",
+      "features": {
+          "playingAllYear": "Jouer toute l'année",
+          "healthAndFitness": "Santé & Fitness",
+          "skillDevelopment": "Développement des compétences",
+          "eventsAndTournaments": "Événements & Tournois"
+      },
+      "featureDescriptions": {
+          "playingAllYear": "Une installation protégée signifie profiter du volleyball de plage à tout moment de l'année, quelles que soient les conditions météorologiques. Les terrains seront disponibles à la location.",
+          "healthAndFitness": "L'activité physique dans le sable contribue à une meilleure condition cardiovasculaire, à une amélioration du tonus musculaire et à une meilleure coordination. Tout le monde, des enfants aux athlètes, peut en bénéficier!",
+          "skillDevelopment": "En travaillant avec des programmes éprouvés et des entraîneurs, nous prévoyons d'offrir des ateliers et des cours aux joueurs de tous niveaux pour améliorer leurs compétences.",
+          "eventsAndTournaments": "Des tournois nationaux de beach volley aux événements privés, nous fournirons un espace pour les joueurs de tous niveaux pour leur permettre de démontrer leurs compétences et profiter de jeux à haute intensité."
+      }
+  },
+  "Footer": {
+      "copyright": "© 2023 Design Web par Julietta Saccardi & Développement Web par Neigeline Rivollat"
+  },
+  "FormModal": {
+      "membershipRequest": "Formulaire de demande d'adhésion",
+      "description": "Entrez vos détails afin que nous puissions vous contacter pour les prochaines étapes.",
+      "successMessage": "Merci pour votre demande. Nous vous contacterons bientôt!"
+  },
+  "GallerySection": {},
+  "Header": {
+      "project": "Le projet",
+      "becomeAMember": "Devenir membre",
+      "aboutUs": "À propos de nous",
+      "contactUs": "Contactez-nous"
+  },
+  "MembershipSection": {
+      "becomeAMember": "Devenir membre",
+      "crowdfundingMembership": "Adhésion par financement participatif",
+      "freeMembership": "Adhésion gratuite",
+      "crowdfundingMembershipsubtitle": "Soutenez-nous en tant que membre d'honneur",
+      "freeMembershipsubtitle": "Soutenez-nous avec une adhésion gratuite",
+      "crowdfundingDescription": "Si vous souhaitez apporter votre soutien d'un cran supplémentaire, vous pouvez contribuer à notre campagne de financement participatif et devenir un membre d'honneur. En tant que membre d'honneur, vous bénéficierez d'un accès prioritaire à l'installation et de réductions sur certains services et événements.",
+      "freeMembershipDescription": "Vous pouvez également montrer votre intérêt pour notre projet et rejoindre notre communauté grandissante en vous inscrivant à une adhésion gratuite. En tant que membre, vous recevrez des mises à jour sur notre progression, des invitations à des événements spéciaux et la satisfaction de contribuer à l'avenir du volleyball de plage intérieur.",
+      "crowdfundingMembershipsButton": "Devenir membre d'honneur",
+      "crowdfundingMembershipButton": "Devenir membre gratuitement"
+  },
+  "PresentationSection": {
+      "ourProject": "Notre projet",
+      "projectDescription": "Notre objectif est de construire une installation de la plus haute qualité, destinée à la fois aux joueurs récréatifs et aux joueurs compétitifs. La structure comportera des terrains de sable de qualité dans une structure couverte qui pourra ainsi proposer des cours, locations de terrains et évènements tout l'année.",
+      "becomeAMember": "Devenir membre"
+  }
+}

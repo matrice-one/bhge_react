@@ -1,18 +1,24 @@
-import React from "react";
+import React,  { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
+import i18n from "./i18n";
+import { I18nextProvider } from "react-i18next";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <I18nextProvider i18n={i18n}>
+      <ThemeProvider theme={theme}>
+      <Suspense fallback={<div>Loading...</div>}>
+        <App />
+        </Suspense>
+      </ThemeProvider>
+    </I18nextProvider>
   </React.StrictMode>
 );
 
