@@ -1,0 +1,74 @@
+{
+    "BannerSection": {
+        "teasingMessagePart1": "Indoor beach volley",
+        "teasingMessagePart2": "presto a Ginevra!",
+        "participateMessage": "Come partecipare"
+    },
+    "AboutUsSection": {
+        "aboutUs": "Su Di Noi",
+        "introduction": "Siamo lieti di presentarvi l'Associazione Geneva Beach Halles, un progetto ambizioso e innovativo creato con l'obiettivo di promuovere e sviluppare vari sport sulla sabbia, in particolare beach volley, beach soccer, beach tennis, così come l'allenamento fisico sulla sabbia per tutti gli atleti, nel cantone del Grande Ginevra e nella Svizzera francofona.",
+        "projectDescription": "Geneva Beach Halles è nato dall'iniziativa di un gruppo di appassionati che, dopo anni di tentativi e richieste, hanno deciso di unire le loro forze per creare un centro sportivo al coperto dedicato a questi sport. L'associazione mira a trovare una posizione adatta, sia in spazi pubblici con il sostegno delle autorità locali sia in spazi privati in aree industriali, per fornire un'infrastruttura accessibile, sostenibile e di qualità per tutto l'anno per giocatori e atleti di tutti i livelli.",
+        "projectGuidance": "Il progetto è guidato dallo slogan 'Da beachers - per beachers', sottolineando la passione e l'entusiasmo dei praticanti e dei fan di questi sport. La mancanza di strutture adeguate nella regione di Ginevra e in tutto l'arco del Lago di Ginevra ha portato un numero crescente di giocatori a sostenere questa causa, supportando fortemente la realizzazione del centro sportivo.",
+        "projectAim": "Geneva Beach Halles mira a essere il punto di riferimento per giocatori e appassionati di beach volley, beach soccer e beach tennis, offrendo un'infrastruttura di qualità, sostenibile e autosufficiente, così come un'accademia dedicata alla formazione delle nuove generazioni di talenti locali. Grazie alla collaborazione con associazioni cantonali, federazioni sportive e sostenitori privati, il progetto è destinato a crescere e diventare un simbolo di eccellenza nella Svizzera francofona e nel territorio del Grande Ginevra.",
+        "projectCreation": "La creazione di Geneva Beach Halles porterà notevoli benefici alla comunità sportiva e a questa regione, aumentando il numero di praticanti, la qualità dei giocatori e attirando il turismo sportivo. Inoltre, il centro sportivo sarà in grado di ospitare competizioni di livello nazionale e internazionale, rendendo Ginevra un punto di riferimento globale per questi sport. Inoltre, l'associazione mira a promuovere l'allenamento fisico sulla sabbia per tutti gli atleti, offrendo un'esperienza unica e vantaggiosa per la forma fisica e la salute.",
+        "joinUs": "Unisciti a noi e sostieni l'Associazione Geneva Beach Halles, contribuendo a creare un futuro luminoso e dinamico per il beach volley, il beach soccer, il beach tennis e l'allenamento fisico sulla sabbia nella regione del Grande Ginevra e nella Svizzera francofona! Allora, andiamo a 'colpire la sabbia'?",
+        "teamMembers": "Amandine, Adrien, Bryan, Carlotta, Dario, Ilaria, Neigeline, Vittorio"
+      },      
+    "ContactFormSection": {
+        "contactUs": "Contattaci",
+        "description": "Beach Center Geneva è un'associazione di appassionati locali di pallavolo da spiaggia con un obiettivo comune. Non esitare a metterti in contatto!",
+        "successMessage": "Grazie per il tuo messaggio! Ti risponderemo il prima possibile.",
+        "firstName": "Nome",
+        "lastName": "Cognome",
+        "email": "Indirizzo email",
+        "whatsapp": "Numero WhatsApp (se desideri unirti al gruppo)",
+        "message": "Messaggio",
+        "submit": "Invia"
+    },
+    "FeaturesSection": {
+        "title": "Pallavolo da spiaggia al coperto significa...",
+        "features": {
+            "playingAllYear": "Giocare tutto l'anno",
+            "healthAndFitness": "Salute & Fitness",
+            "skillDevelopment": "Sviluppo delle abilità",
+            "eventsAndTournaments": "Eventi & Tornei"
+        },
+        "featureDescriptions": {
+            "playingAllYear": "Un impianto protetto significa godersi la pallavolo da spiaggia in qualsiasi momento dell'anno, indipendentemente dalle condizioni meteorologiche.",
+            "healthAndFitness": "L'attività fisica sulla sabbia contribuisce a una migliore forma cardiovascolare, a un tono muscolare migliorato e a una coordinazione occhio-mano potenziata. Tutti, dai bambini agli atleti, possono beneficiarne!",
+            "skillDevelopment": "Lavorando con programmi e allenatori esistenti, e introducendo i nostri, abbiamo in programma di offrire workshop e lezioni ai giocatori di tutti i livelli per migliorare le loro abilità.",
+            "eventsAndTournaments": "Dai tornei nazionali di pallavolo da spiaggia agli eventi privati, forniremo uno spazio per giocatori di tutti i livelli per mostrare le loro abilità e godersi partite ad alta energia."
+        }
+    },
+    "Footer": {
+        "copyright": "© 2023 Design Web di Julietta Saccardi & Sviluppo Web di Neigeline Rivollat"
+    },
+    "FormModal": {
+        "membershipRequest": "Modulo di richiesta di adesione",
+        "description": "Inserisci i tuoi dettagli in modo che possiamo contattarti per i prossimi passi.",
+        "successMessage": "Grazie per la tua richiesta. Ti contatteremo presto!"
+    },
+    "GallerySection": {},
+    "Header": {
+        "project": "Il progetto",
+        "becomeAMember": "Diventa un membro",
+        "aboutUs": "Chi siamo",
+        "contactUs": "Contattaci"
+    },
+    "MembershipSection": {
+        "becomeAMember": "Diventa un membro",
+        "crowdfundingMembership": "Iscrizione al crowdfunding",
+        "freeMembership": "Iscrizione gratuita",
+        "crowdfundingMembershipsubtitle": "Sostienici come membro onorario",
+        "freeMembershipsubtitle": "Sostienici con una iscrizione gratuita",
+        "crowdfundingDescription": "Se desideri sostenere ulteriormente il nostro progetto, puoi contribuire alla nostra campagna di crowdfunding e diventare un membro onorario. Come membro onorario, riceverai un accesso prioritario all'impianto e sconti su determinati servizi ed eventi.",
+        "freeMembershipDescription": "Puoi anche mostrare il tuo interesse per il nostro progetto e unirti alla nostra crescente comunità iscrivendoti gratuitamente. Come membro, riceverai aggiornamenti sui nostri progressi, inviti a eventi speciali e la soddisfazione di contribuire al futuro della pallavolo da spiaggia al coperto.",
+        "crowdfundingMembershipsButton": "Diventa un membro onorario",
+        "crowdfundingMembershipButton": "Iscriviti gratuitamente"
+    },
+    "PresentationSection": {
+        "ourProject": "Il nostro progetto",
+        "projectDescription": "Il nostro obiettivo è costruire un impianto di altissima qualità, tenendo presente sia i giocatori ricreativi che quelli competitivi. Avrà un ambiente simile a una spiaggia con campi da gioco in sabbia di qualità professionale, proprio come quelli utilizzati nei tornei internazionali.",
+        "becomeAMember": "Diventa un membro"
+    }
+}
