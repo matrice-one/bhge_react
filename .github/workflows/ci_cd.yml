@@ -34,8 +34,10 @@ jobs:
       uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.DROPLET_IP }}
+        key: ${{ secrets.DEPLOYMENT_SSH_KEY }}
         username: ${{ secrets.DROPLET_USER }}
-        password: ${{ secrets.DROPLET_PASSWORD }}
+        passphrase : ${{ secrets.PASSPHRASE }}
+        password: ${{ secrets.DIGITAL_OCEAN_DROPLET_PASSWORD }}
         source: "deploy/react_beach_halles.tar.gz"
         target: "/tmp"
 
@@ -43,16 +45,20 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.DROPLET_IP }}
+        key: ${{ secrets.DEPLOYMENT_SSH_KEY }}
         username: ${{ secrets.DROPLET_USER }}
-        password: ${{ secrets.DROPLET_PASSWORD }}
+        passphrase : ${{ secrets.PASSPHRASE }}
+        password: ${{ secrets.DIGITAL_OCEAN_DROPLET_PASSWORD }}
         script: ls -la /tmp
 
     - name: Deploy to server
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.DROPLET_IP }}
+        key: ${{ secrets.DEPLOYMENT_SSH_KEY }}
         username: ${{ secrets.DROPLET_USER }}
-        password: ${{ secrets.DROPLET_PASSWORD }}
+        passphrase : ${{ secrets.PASSPHRASE }}
+        password: ${{ secrets.DIGITAL_OCEAN_DROPLET_PASSWORD }}
         script: |
           sudo rm -rf /var/www/react_beach_halles || true
           sudo mkdir -p /var/www/react_beach_halles
