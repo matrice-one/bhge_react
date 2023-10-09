@@ -10,8 +10,8 @@ import { useTranslation } from "react-i18next";
 function MembershipSection() {
   const { t } = useTranslation();
   const sections = [
-    { title: t("MembershipSection.crowdfundingMembership"), subtitle:t("MembershipSection.crowdfundingMembershipsubtitle"), description: t("MembershipSection.crowdfundingDescription"), buttonText: t("MembershipSection.crowdfundingMembershipsButton")},
     { title: t("MembershipSection.freeMembership"), subtitle:t("MembershipSection.freeMembershipsubtitle"), description: t("MembershipSection.freeMembershipDescription"), buttonText: t("MembershipSection.crowdfundingMembershipButton")},
+    { title: t("MembershipSection.crowdfundingMembership"), subtitle:t("MembershipSection.crowdfundingMembershipsubtitle"), description: t("MembershipSection.crowdfundingDescription"), buttonText: t("MembershipSection.crowdfundingMembershipsButton")},
   ];
     
   return (
@@ -33,7 +33,9 @@ function MembershipSection() {
                 <Typography color={"primary.main"} variant="body1" gutterBottom align="justify">
                   {section.description}
                 </Typography>
+                <Box paddingTop={'1em'}>
                 <FormModal buttonText= {section.buttonText} />
+                </Box>
               </Grid>
             ))}
           </Grid>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Button, Box, useTheme, useMediaQuery, Container } from "@mui/material";
 import { useTranslation } from "react-i18next";
+// import FormModal from "./FormModal";
 
 function Banner() {
   const { t } = useTranslation();
@@ -12,13 +13,13 @@ function Banner() {
   if (matchesMdUp) {
     variant = "h2";
   } else if (matchesSmUp) {
-    variant = "h3";
+    variant = "h2";
   } else {
-    variant = "h4";
+    variant = "h3";
   }
   return (
-    <Box mt={{ xs: 12, sm: 0, md: 0 }}>
-      <Container maxWidth="lg">
+    <Container maxWidth="lg">
+      <Box mt={{ xs: 12, sm: 0, md: 0 }}>
         <Box pt={2} textAlign="left" >
           <Box display="flex" flexDirection="column" justifyContent="center" alignItems="flex-start" height="100%">
             <Box pb={2}>
@@ -38,8 +39,9 @@ function Banner() {
             </Button>
           </Box>
         </Box>
-      </Container>
-    </Box>
+      </Box>
+    </Container>
+
   );
 }
 

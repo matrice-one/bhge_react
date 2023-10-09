@@ -1,6 +1,6 @@
 // Header.js
 import * as React from "react";
-import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem, ListItemText, useTheme, useMediaQuery } from "@mui/material";
+import { Container, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem, ListItemText, useTheme, useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../media/images/logo.png";
 import { animateScroll as scroll } from "react-scroll";
@@ -21,7 +21,7 @@ function useSmoothScroll() {
 }
 
 // eslint-disable-next-line react/prop-types
-export default function Header({ transparent = true }) {
+export default function Header({}) {
   const { t } = useTranslation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -51,39 +51,42 @@ export default function Header({ transparent = true }) {
   );
 
   return (
-    <AppBar position="static" elevation={0} style={{ backgroundColor: transparent ? "transparent" : "black" }}>
-      <Toolbar>
-        <Typography color={"primary"} variant="h5" sx={{ flexGrow: 1 }}>
-          <img src={Logo} alt="logo" style={{ height: "60px",}} /> {/* adjust the height as needed */}
-          BEACH HALLE GENEVE
-        </Typography>
-        {isMobile ? (
-          <>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Drawer
-              anchor="right"
-              open={drawerOpen}
-              onClose={handleDrawerToggle}
-            >
-              {drawer}
-            </Drawer>
-          </>
-        ) : (
-          <Box display="flex" gap={8}>
-            <Button onClick={() => scrollTo("presentationsection")} smooth={true} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> {t("Header.project")} </Typography></Button>
-            <Button onClick={() => scrollTo("membershipsection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>{t("Header.becomeAMember")} </Typography></Button>
-            <Button onClick={() => scrollTo("aboutussection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>{t("Header.aboutUs")}</Typography></Button>
-            <Button onClick={() => scrollTo("contactsection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> {t("Header.contactUs")} </Typography></Button>
-          </Box>
-        )}
-      </Toolbar>
-    </AppBar>
+    <Container maxWidth="lg">
+      {/* <AppBar position="static" elevation={0} style={{ backgroundColor: transparent ? "transparent" : "black",}}> */}
+        <Toolbar  maxWidth="lg">
+          <Typography color={"primary"} variant="h5" sx={{ flexGrow: 1 }}>
+            <img src={Logo} alt="logo" style={{ height: "60px",}} /> {/* adjust the height as needed */}
+            BEACH HALLE GENEVE
+          </Typography>
+          {isMobile ? (
+            <>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Drawer
+                anchor="right"
+                open={drawerOpen}
+                onClose={handleDrawerToggle}
+              >
+                {drawer}
+              </Drawer>
+            </>
+          ) : (
+            <Box display="flex" gap={3}>
+              <Button onClick={() => scrollTo("presentationsection")} smooth={true} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> {t("Header.project")} </Typography></Button>
+              <Button onClick={() => scrollTo("membershipsection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>{t("Header.becomeAMember")} </Typography></Button>
+              <Button onClick={() => scrollTo("aboutussection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>{t("Header.aboutUs")}</Typography></Button>
+              <Button onClick={() => scrollTo("contactsection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> {t("Header.contactUs")} </Typography></Button>
+            </Box>
+          )}
+        </Toolbar>
+      {/* </AppBar> */}
+    </Container>
+  
   );
 }
