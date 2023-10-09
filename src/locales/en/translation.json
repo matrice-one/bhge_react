@@ -2,7 +2,7 @@
     "BannerSection": {
         "teasingMessagePart1": "Indoor Beach Volleyball",
         "teasingMessagePart2": "coming soon to Geneva!",
-        "participateMessage": "How to participate"
+        "participateMessage": "Support us by becoming a member"
       },
     "AboutUsSection": {
       "aboutUs": "About Us",
@@ -61,11 +61,11 @@
       "becomeAMember": "Become a member",
       "crowdfundingMembership": "Crowdfunding membership",
       "freeMembership": "Free membership",
-      "crowdfundingMembershipsubtitle": "Support us as a member of honor",
+      "crowdfundingMembershipsubtitle": "Coming soon...",
       "freeMembershipsubtitle": "Support us with a free membership",
-      "crowdfundingDescription": "If you’d like to take your support a step further, you can contribute to our crowdfunding campaign and become a member of honor. As a member of honor, you'll receive priority access to the facility, and discounts on certain services and events.",
-      "freeMembershipDescription":"You can also show your interest in our project and join our growing community by signing up for a free membership. As a member, you'll receive updates on our progress, invitations to special events, and the satisfaction of contributing to the future of indoor beach volleyball.",
-      "crowdfundingMembershipsButton": "Become a member of honor",
+      "crowdfundingDescription": "When the project will be at a more advanced phase, we are considering to launch a crowdfunding campaign, just like the successful project of Zürich did. Contributing member will have additional goodies and privileges, which remain to be defined today.",
+      "freeMembershipDescription": "Help us give more strength to the project by joining our growing community with a free membership. As a member, if you wish, you will receive updates on our progress, invitations to special events, and the satisfaction of contributing to the future of indoor beach volleyball.",
+      "crowdfundingMembershipsButton": "Get in touch to help us financially already",
       "crowdfundingMembershipButton": "Become a member for free"
     },
     "PresentationSection": {

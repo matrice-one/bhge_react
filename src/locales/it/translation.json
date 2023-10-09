@@ -57,15 +57,15 @@
     },
     "MembershipSection": {
         "becomeAMember": "Diventa un membro",
-        "crowdfundingMembership": "Iscrizione al crowdfunding",
+        "crowdfundingMembership": "Iscrizione per crowdfunding",
         "freeMembership": "Iscrizione gratuita",
-        "crowdfundingMembershipsubtitle": "Sostienici come membro onorario",
-        "freeMembershipsubtitle": "Sostienici con una iscrizione gratuita",
-        "crowdfundingDescription": "Se desideri sostenere ulteriormente il nostro progetto, puoi contribuire alla nostra campagna di crowdfunding e diventare un membro onorario. Come membro onorario, riceverai un accesso prioritario all'impianto e sconti su determinati servizi ed eventi.",
-        "freeMembershipDescription": "Puoi anche mostrare il tuo interesse per il nostro progetto e unirti alla nostra crescente comunità iscrivendoti gratuitamente. Come membro, riceverai aggiornamenti sui nostri progressi, inviti a eventi speciali e la soddisfazione di contribuire al futuro della pallavolo da spiaggia al coperto.",
-        "crowdfundingMembershipsButton": "Diventa un membro onorario",
-        "crowdfundingMembershipButton": "Iscriviti gratuitamente"
-    },
+        "crowdfundingMembershipsubtitle": "In arrivo...",
+        "freeMembershipsubtitle": "Supportaci con una iscrizione gratuita",
+        "crowdfundingDescription": "Quando il progetto sarà in una fase più avanzata, stiamo considerando di lanciare una campagna di crowdfunding, proprio come ha fatto con successo il progetto di Zürich. I membri contribuenti avranno ulteriori vantaggi e privilegi, che rimangono da definire oggi.",
+        "freeMembershipDescription": "Aiutaci a dare più forza al progetto unendoti alla nostra comunità in crescita iscrivendoti gratuitamente. Come membro, se lo desideri, riceverai aggiornamenti sui nostri progressi, inviti a eventi speciali e la soddisfazione di contribuire al futuro del beach volley indoor.",
+        "crowdfundingMembershipsButton": "Mettiti in contatto per aiutarci finanziariamente già da ora",
+        "crowdfundingMembershipButton": "Diventa un membro gratuitamente"
+      },      
     "PresentationSection": {
         "ourProject": "Il nostro progetto",
         "projectDescription": "Il nostro obiettivo è costruire un impianto di altissima qualità, tenendo presente sia i giocatori ricreativi che quelli competitivi. Avrà un ambiente simile a una spiaggia con campi da gioco in sabbia di qualità professionale, proprio come quelli utilizzati nei tornei internazionali.",

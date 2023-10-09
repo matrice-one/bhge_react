@@ -2,7 +2,7 @@
   "BannerSection": {
       "teasingMessagePart1": "Beach volley indoor",
       "teasingMessagePart2": "bientôt à Genève!",
-      "participateMessage": "Comment participer"
+      "participateMessage": "Soutenez-nous en devenant membre!"
   },
   "AboutUsSection": {
     "aboutUs": "À Propos De Nous",
@@ -61,8 +61,8 @@
       "freeMembership": "Adhésion gratuite",
       "crowdfundingMembershipsubtitle": "Soutenez-nous en tant que membre d'honneur",
       "freeMembershipsubtitle": "Soutenez-nous avec une adhésion gratuite",
-      "crowdfundingDescription": "Si vous souhaitez apporter votre soutien d'un cran supplémentaire, vous pouvez contribuer à notre campagne de financement participatif et devenir un membre d'honneur. En tant que membre d'honneur, vous bénéficierez d'un accès prioritaire à l'installation et de réductions sur certains services et événements.",
-      "freeMembershipDescription": "Vous pouvez également montrer votre intérêt pour notre projet et rejoindre notre communauté grandissante en vous inscrivant à une adhésion gratuite. En tant que membre, vous recevrez des mises à jour sur notre progression, des invitations à des événements spéciaux et la satisfaction de contribuer à l'avenir du volleyball de plage intérieur.",
+      "crowdfundingDescription": "Lorsque le projet sera à une phase plus avancée, nous envisageons de lancer une campagne de financement participatif, tout comme l'a fait le projet réussi de Zürich. Les membres contributeurs auront des avantages et des privilèges supplémentaires, qui restent à être définis aujourd'hui.",
+      "freeMembershipDescription": "Aidez-nous à donner plus de force au projet et rejoignez notre communauté grandissante en vous inscrivant à une adhésion gratuite. En tant que membre, vous recevrez si vous le souhaitez des mises à jour sur notre progression, des invitations à des événements spéciaux et la satisfaction de contribuer à l'avenir du volleyball de plage intérieur.",
       "crowdfundingMembershipsButton": "Devenir membre d'honneur",
       "crowdfundingMembershipButton": "Devenir membre gratuitement"
   },
