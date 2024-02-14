@@ -2,20 +2,13 @@ import React, { useState } from 'react';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
-import { useForm } from '@formspree/react';
-import { useTranslation } from "react-i18next";
 
 function FormModal({ buttonText }) {
-  const { t } = useTranslation();
 
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
-  // Assuming the useForm hook and state are for a different form or functionality
-  const [state, handleSubmit] = useForm("yourFormIdHere"); // Ensure this matches your Formspree form ID
 
   const body = (
     <Box
@@ -38,12 +31,9 @@ function FormModal({ buttonText }) {
         justifyContent: 'space-between' 
       }}
     >
-      {state.succeeded ? (
-        <Typography color={'tertiary'} variant='h5'>
-          {t("FormModal.successMessage")}
-        </Typography>
-      ) : (
-        <form onSubmit={handleSubmit}>
+
+
+        <form>
           <div dangerouslySetInnerHTML={{ __html: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWDNy5I-B_juNFQEbNyqMqJkR6HpJY4TYPpLruDv0-t3bitA/viewform?embedded=true" width="100%" height="100%" style="border: none; min-height: 500px;" frameborder="0" marginheight="0" marginwidth="0" marginbottom="2px">Loading…</iframe>` }} />
           <Button type="button" variant="contained" color="primary" 
               onClick={handleClose} 
@@ -58,7 +48,7 @@ function FormModal({ buttonText }) {
             </Button>
         </form>
         
-      )}
+    
     </Box>
   );
 
