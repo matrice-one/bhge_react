@@ -1,8 +1,8 @@
 // Header.js
 import * as React from "react";
-import { Container, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem, ListItemText, useTheme, useMediaQuery } from "@mui/material";
+import {Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem, ListItemText, useTheme, useMediaQuery, Container } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import Logo from "../media/images/logo.png";
+import Logo from "../media/images/logo_3.png";
 import { animateScroll as scroll } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
@@ -51,12 +51,11 @@ export default function Header({}) {
   );
 
   return (
-    <Container maxWidth="lg">
-      {/* <AppBar position="static" elevation={0} style={{ backgroundColor: transparent ? "transparent" : "black",}}> */}
-        <Toolbar  maxWidth="lg">
-          <Typography color={"primary"} variant="h5" sx={{ flexGrow: 1 }}>
-            <img src={Logo} alt="logo" style={{ height: "60px",}} /> {/* adjust the height as needed */}
-            BEACH HALLE GENEVE
+    <Container >
+      {/* // <AppBar position="static" elevation={0} style={{ backgroundColor: transparent ? "transparent" : "black",}}> */}
+      <Toolbar disableGutters sx={{ justifyContent: 'start' }}> {/* disableGutters is the key to removing padding */}
+          <Typography  style={{ marginTop: '1em' }} color={"white"} variant="h5" sx={{ flexGrow: 1, margin: 0}}>
+          <img src={Logo} alt="logo" style={{ height: "50px",}} /> {/* adjust the height as needed */}
           </Typography>
           {isMobile ? (
             <>
@@ -85,8 +84,8 @@ export default function Header({}) {
             </Box>
           )}
         </Toolbar>
-      {/* </AppBar> */}
-    </Container>
+      {/* // </AppBar> */}
+   </Container>
   
   );
 }

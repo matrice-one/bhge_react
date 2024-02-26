@@ -23,13 +23,13 @@ function Banner() {
         <Box pt={2} textAlign="left" >
           <Box display="flex" flexDirection="column" justifyContent="center" alignItems="flex-start" height="100%">
             <Box pb={2}>
-              <Typography color={"primary"} variant={variant} align="left">
+              <Typography color={"white"} variant={variant} align="left">
                 {t("BannerSection.teasingMessagePart1")}<br></br>{t("BannerSection.teasingMessagePart2")}
               </Typography>
             </Box>
             <Box pb={{ xs: 0, sm: 1, md: 2 }}>
             </Box>
-            <Button  sx={{ borderRadius: "16px" }} variant="contained" color="primary" onClick={() => {
+            <Button  sx={{ borderRadius: "16px" }} variant="contained" color="tertiary" onClick={() => {
                   const section = document.getElementById("membershipsection");
                   if (section) {
                     section.scrollIntoView({ behavior: "smooth" });

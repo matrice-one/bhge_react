@@ -10,7 +10,7 @@ function Footer() {
   };
 
   return (
-    <Box py={3} bgcolor="tertiary.main" color="primary.main">
+    <Box py={3} bgcolor="secondary.main" color="primary.main">
       <Typography variant="body1" align="center">
         {t("Footer.copyright")}
       </Typography>

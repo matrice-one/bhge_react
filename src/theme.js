@@ -3,41 +3,51 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#f1d8b2",
+      main: "#f1f5f9",
     },
     secondary: {
-      main: "#0098FF",
+      main: "#14213d",
     },
     tertiary: {
-      main: "#000",
+      main: "#0098fe",
+      contrastText: "#fff"
     },
   },
   typography: {
-    fontFamily: "Staatliches",
+    fontFamily: "Roboto",
     body1: {
       fontFamily: "Roboto",
-      fontSize: "18px",
-      lineHeight: 1.5,
+      fontSize: "17px",
+      lineHeight: 1.4,
+      fontWeight: 400,
     },    
     h1: {
+      fontFamily: "Staatliches",
       fontSize: '4rem',
     },
     h2: {
-      fontSize: '3.5rem',
+      fontFamily: "Staatliches",
+      fontSize: '40px',
     },
     h3: {
+      fontFamily: "Staatliches",
       fontSize: '3rem',
     },
     h4: {
+      fontFamily: "Staatliches",
+
       fontSize: '2.5rem',
     },
     h5: {
-      fontSize: '2rem',
+      fontFamily: "Staatliches",
+
+      fontSize: '24px',
     },
     h6: {
-      fontFamily: "Mohave",
-      fontSize: '1.2rem',
-      fontWeight: "bolder"
+      fontFamily: "Roboto",
+      fontSize: '15px',
+      fontWeight: 400,
+      // fontWeight: "bolder"
     },
   }
   

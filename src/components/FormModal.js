@@ -54,7 +54,7 @@ function FormModal({ buttonText }) {
 
   return (
     <div>
-      <Button variant="contained" color="primary" onClick={handleOpen}>
+      <Button  sx={{ borderRadius: "16px" }}  variant="contained" color="tertiary" onClick={handleOpen}>
         {buttonText}
       </Button>
       <Modal
