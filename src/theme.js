@@ -41,7 +41,7 @@ const theme = createTheme({
     h5: {
       fontFamily: "Staatliches",
 
-      fontSize: '2rem',
+      fontSize: '1.6rem',
     },
     h6: {
       fontFamily: "Staatliches",

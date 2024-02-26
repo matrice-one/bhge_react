@@ -29,7 +29,7 @@ function Banner() {
             </Box>
             <Box pb={{ xs: 0, sm: 1, md: 2 }}>
             </Box>
-            <Button  sx={{ borderRadius: "16px" }} variant="contained" color="primary" onClick={() => {
+            <Button  sx={{ borderRadius: "16px" }} variant="contained" color="tertiary" onClick={() => {
                   const section = document.getElementById("membershipsection");
                   if (section) {
                     section.scrollIntoView({ behavior: "smooth" });
