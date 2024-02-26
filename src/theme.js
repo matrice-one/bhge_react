@@ -6,38 +6,47 @@ const theme = createTheme({
       main: "#f1d8b2",
     },
     secondary: {
-      main: "#0098FF",
+      main: "#14213d",
     },
     tertiary: {
-      main: "#000",
+      main: "#0098fe",
+      contrastText: "#fff"
     },
   },
   typography: {
-    fontFamily: "Staatliches",
+    fontFamily: "Roboto",
     body1: {
       fontFamily: "Roboto",
-      fontSize: "18px",
-      lineHeight: 1.5,
+      fontSize: "19px",
+      lineHeight: 1.4,
+      fontWeight: 400,
     },    
     h1: {
+      fontFamily: "Staatliches",
       fontSize: '4rem',
     },
     h2: {
+      fontFamily: "Staatliches",
       fontSize: '3.5rem',
     },
     h3: {
+      fontFamily: "Staatliches",
       fontSize: '3rem',
     },
     h4: {
+      fontFamily: "Staatliches",
+
       fontSize: '2.5rem',
     },
     h5: {
+      fontFamily: "Staatliches",
+
       fontSize: '2rem',
     },
     h6: {
-      fontFamily: "Mohave",
+      fontFamily: "Staatliches",
       fontSize: '1.2rem',
-      fontWeight: "bolder"
+      // fontWeight: "bolder"
     },
   }
   

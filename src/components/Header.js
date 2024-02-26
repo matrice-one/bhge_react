@@ -1,6 +1,6 @@
 // Header.js
 import * as React from "react";
-import { Container, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem, ListItemText, useTheme, useMediaQuery } from "@mui/material";
+import {Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem, ListItemText, useTheme, useMediaQuery, Container } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../media/images/logo.png";
 import { animateScroll as scroll } from "react-scroll";
@@ -51,12 +51,11 @@ export default function Header({}) {
   );
 
   return (
-    <Container maxWidth="lg">
-      {/* <AppBar position="static" elevation={0} style={{ backgroundColor: transparent ? "transparent" : "black",}}> */}
-        <Toolbar  maxWidth="lg">
-          <Typography color={"primary"} variant="h5" sx={{ flexGrow: 1 }}>
+    <Container >
+      {/* // <AppBar position="static" elevation={0} style={{ backgroundColor: transparent ? "transparent" : "black",}}> */}
+      <Toolbar style={{ margin: 0, padding: '0 24px' }} maxWidth="lg" sx={{ alignItems: 'center', justifyContent: 'start', margin: 0 }}>
+          <Typography  style={{ margin: 0 }} color={"primary"} variant="h5" sx={{ flexGrow: 1, margin: 0}}>
             <img src={Logo} alt="logo" style={{ height: "60px",}} /> {/* adjust the height as needed */}
-            BEACH HALLE GENEVE
           </Typography>
           {isMobile ? (
             <>
@@ -85,8 +84,8 @@ export default function Header({}) {
             </Box>
           )}
         </Toolbar>
-      {/* </AppBar> */}
-    </Container>
+      {/* // </AppBar> */}
+   </Container>
   
   );
 }

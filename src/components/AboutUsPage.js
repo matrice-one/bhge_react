@@ -20,9 +20,9 @@ const HomePage = () => {
 
     return (
       <div id="aboutussection">
-        <Box p={4} bgcolor={"tertiary.main"}>
+        <Box p={4} bgcolor={"secondary.main"}>
             <Container maxWidth="lg">
-                <FullHeightSection bgcolor={"tertiary.main"}>  
+                <FullHeightSection bgcolor={"secondary.main"}>  
                     <Typography color={"primary"} variant={variant} align="left">
                         {t("AboutUsSection.aboutUs")}
                     </Typography>

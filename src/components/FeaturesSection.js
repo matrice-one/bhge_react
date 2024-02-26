@@ -22,8 +22,8 @@ function FeaturesSection() {
               <Grid container spacing={4} pt={6}>
                 {features.map((feature, index) => (
                   <Grid item xs={12} sm={6} md={3} key={index}>
-                    <Card sx={{ height: "100%", border: "4px solid", borderColor: "secondary.main", display: "grid", gridTemplateRows: "1fr 1fr" }}>
-                      <Box sx={{ bgcolor:"primary.main", borderBottom: "2px solid", borderColor: "secondary.main", pt:3, pb: 2, px: 2 }}>
+                    <Card sx={{ height: "100%", border: "4px solid", borderColor: "tertiary.main", display: "grid", gridTemplateRows: "1fr 1fr" }}>
+                      <Box sx={{ bgcolor:"primary.main", borderBottom: "2px solid", borderColor: "tertiary.main", pt:3, pb: 2, px: 2 }}>
                         <Typography variant="h5" color={"secondary.main"} gutterBottom >
                           {feature.title}
                         </Typography>

@@ -9,7 +9,7 @@ import FullHeightSection from './reusable_components/FullHeightSection';
 function GallerySection() {
   
   return (
-    <FullHeightSection bgcolor={"black"}>
+    <FullHeightSection bgcolor={"primary.main"}>
         <Grid container spacing={0} bgcolor={"black"}>
           <Grid item xs={6} md={3}>
             <img src={imageGallery1} alt="Section" style={{ width: "100%", height: "100%", objectFit: "cover" }} />

@@ -8,7 +8,7 @@ function PresentationSection() {
   const { t } = useTranslation();
 
   return (
-    <Box id="presentationsection" sx={{ bgcolor: "tertiary.main" }}>
+    <Box id="presentationsection" sx={{ bgcolor: "secondary.main" }}>
       <FullHeightSection>
         <Container maxWidth="lg">
         <Grid container>
@@ -18,7 +18,7 @@ function PresentationSection() {
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
-              <Box p={4} bgcolor='tertiary.main' display="flex" flexDirection="column" justifyContent="center">
+              <Box p={4} bgcolor='secondary.main' display="flex" flexDirection="column" justifyContent="center">
                 <Typography color={"primary"} variant="h3" gutterBottom>
                   {t("PresentationSection.ourProject")}
                 </Typography>
@@ -27,7 +27,7 @@ function PresentationSection() {
                   {t("PresentationSection.projectDescription")}
                 </Typography>
                 <Box display="inline-block">
-                  <Button variant="contained" color="primary"  onClick={() => {
+                  <Button sx={{ borderRadius: "16px" }} variant="contained" color="tertiary"  onClick={() => {
                   const section = document.getElementById("membershipsection");
                   if (section) {
                     section.scrollIntoView({ behavior: "smooth" });
