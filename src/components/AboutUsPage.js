@@ -23,7 +23,7 @@ const HomePage = () => {
         <Box p={4} bgcolor={"secondary.main"}>
             <Container maxWidth="lg">
                 <FullHeightSection bgcolor={"secondary.main"}>  
-                    <Typography color={"primary"} variant={variant} align="left">
+                    <Typography color={"primary"} variant={variant} align="left" paddingBottom={2}>
                         {t("AboutUsSection.aboutUs")}
                     </Typography>
                     <Typography color={"primary"} variant={'body1'} align="justify">

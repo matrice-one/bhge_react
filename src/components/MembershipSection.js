@@ -18,7 +18,7 @@ function MembershipSection() {
     <Box id="membershipsection" p={4} bgcolor={"secondary.main"}>
      <Container maxWidth="lg">
       <FullHeightSection>
-          <Typography color={"primary.main"} variant="h3" gutterBottom>
+          <Typography color={"primary.main"} variant="h2" gutterBottom>
             {t("MembershipSection.becomeAMember")}
           </Typography>
           <Grid container spacing={20} pt={6}>

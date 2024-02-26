@@ -23,7 +23,7 @@ function Banner() {
         <Box pt={2} textAlign="left" >
           <Box display="flex" flexDirection="column" justifyContent="center" alignItems="flex-start" height="100%">
             <Box pb={2}>
-              <Typography color={"primary"} variant={variant} align="left">
+              <Typography color={"white"} variant={variant} align="left">
                 {t("BannerSection.teasingMessagePart1")}<br></br>{t("BannerSection.teasingMessagePart2")}
               </Typography>
             </Box>

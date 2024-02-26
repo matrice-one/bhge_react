@@ -16,7 +16,7 @@ function FeaturesSection() {
     <Box p={4} bgcolor={"primary.main"}>
       <Container maxWidth="lg">
         <FullHeightSection>
-            <Typography variant="h3" color={"secondary.main"} gutterBottom>
+            <Typography variant="h2" color={"secondary.main"} gutterBottom>
               {t("FeaturesSection.title")}
             </Typography>
               <Grid container spacing={4} pt={6}>

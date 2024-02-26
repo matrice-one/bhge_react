@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#f1d8b2",
+      main: "#f1f5f9",
     },
     secondary: {
       main: "#14213d",
@@ -17,7 +17,7 @@ const theme = createTheme({
     fontFamily: "Roboto",
     body1: {
       fontFamily: "Roboto",
-      fontSize: "19px",
+      fontSize: "17px",
       lineHeight: 1.4,
       fontWeight: 400,
     },    
@@ -27,7 +27,7 @@ const theme = createTheme({
     },
     h2: {
       fontFamily: "Staatliches",
-      fontSize: '3.5rem',
+      fontSize: '40px',
     },
     h3: {
       fontFamily: "Staatliches",
@@ -41,11 +41,12 @@ const theme = createTheme({
     h5: {
       fontFamily: "Staatliches",
 
-      fontSize: '1.6rem',
+      fontSize: '24px',
     },
     h6: {
-      fontFamily: "Staatliches",
-      fontSize: '1.2rem',
+      fontFamily: "Roboto",
+      fontSize: '15px',
+      fontWeight: 400,
       // fontWeight: "bolder"
     },
   }
