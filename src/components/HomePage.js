@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "./Banner";
 import Header from "./Header";
-import bannerImage from "../media/images/vue_evaux.jpeg";
+import bannerImage from "../media/images/banner_image.png";
 import PresentationSection from "./PresentationSection";
 import MembershipSection from "./MembershipSection";
 import { Box,} from "@mui/material";
