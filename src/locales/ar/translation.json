@@ -41,14 +41,16 @@
         }
     },
     "Footer": {
-        "copyright": "© 2023 تصميم الويب جولييتا ساكاردي وتطوير الويب نيجلين ريفولات"
+        "copyright": "© 2023 الرسومات: جولييتا ساكاردي، تطوير الويب: نيجيلين ريفولات"
     },
     "FormModal": {
         "membershipRequest": "نموذج طلب العضوية",
         "description": "أدخل تفاصيلك حتى نتمكن من الاتصال بك للخطوات التالية.",
         "successMessage": "شكرًا على طلبك. سوف نتواصل معك قريبًا!"
     },
-    "GallerySection": {},
+    "GallerySection": {
+        "credits": "تم التقاط الصور بواسطة www.redzonefoto.com"
+    },
     "Header": {
         "project": "المشروع",
         "becomeAMember": "كن عضوًا",

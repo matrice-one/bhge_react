@@ -41,14 +41,16 @@
         }
     },
     "Footer": {
-        "copyright": "© 2023 Design Web di Julietta Saccardi & Sviluppo Web di Neigeline Rivollat"
+        "copyright": "© 2023 Grafica di Julietta Saccardi & Sviluppo Web di Neigeline Rivollat"
     },
     "FormModal": {
         "membershipRequest": "Modulo di richiesta di adesione",
         "description": "Inserisci i tuoi dettagli in modo che possiamo contattarti per i prossimi passi.",
         "successMessage": "Grazie per la tua richiesta. Ti contatteremo presto!"
     },
-    "GallerySection": {},
+    "GallerySection": {
+        "credits": "Crediti fotografici: www.redzonefoto.com"
+    },
     "Header": {
         "project": "Il progetto",
         "becomeAMember": "Diventa un membro",

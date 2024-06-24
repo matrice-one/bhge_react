@@ -41,7 +41,7 @@
       }
     },
     "Footer": {
-      "copyright": "© 2023 Web Design Julietta Saccardi & Web Development Neigeline Rivollat"
+      "copyright": "© 2023 Graphist Julietta Saccardi & Web Development Neigeline Rivollat"
     },
     "FormModal": {
       "membershipRequest": "Membership Request Form",
@@ -49,7 +49,7 @@
       "successMessage": "Thanks for your request. We will get in touch soon!"
     },
     "GallerySection": {
-        
+        "credits" : "Photos by www.redzonefoto.com"
     },
     "Header": {
       "project": "The project",
