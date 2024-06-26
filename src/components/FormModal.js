@@ -35,17 +35,6 @@ function FormModal({ buttonText }) {
 
         <form>
           <div dangerouslySetInnerHTML={{ __html: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWDNy5I-B_juNFQEbNyqMqJkR6HpJY4TYPpLruDv0-t3bitA/viewform?embedded=true" width="100%" height="100%" style="border: none; min-height: 500px;" frameborder="0" marginheight="0" marginwidth="0" marginbottom="2px">Loading…</iframe>` }} />
-          <Button type="button" variant="contained" color="primary" 
-              onClick={handleClose} 
-              sx={{
-                display: 'block', // Make the button a block element
-                margin: '20px auto auto', 
-                borderRadius: '5px',
-                fontFamily: "body1.fontFamily",
-                '&:hover': { backgroundColor: "secondary.main" },
-              }}>
-              Close the form
-            </Button>
         </form>
         
     
