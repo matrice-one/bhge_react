@@ -10,7 +10,7 @@ function PresentationSection() {
   return (
     <Box id="presentationsection" sx={{ bgcolor: "secondary.main" }}>
       <FullHeightSection>
-      <Typography color={"primary"} variant="h2" gutterBottom>
+      <Typography color={"tertiary.main"} variant="h2">
                   {t("PresentationSection.ourProject")}
                 </Typography>
         <Container maxWidth="lg">
@@ -27,16 +27,13 @@ function PresentationSection() {
                 <Typography color={"primary"} variant="body1" align="justify" gutterBottom>
                   {t("PresentationSection.projectDescription")}
                 </Typography>
-                <Box display="inline-block">
-                  <Button sx={{ borderRadius: "16px" }} variant="contained" color="tertiary"  onClick={() => {
-                  const section = document.getElementById("membershipsection");
-                  if (section) {
-                    section.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}>               
-                  {t("PresentationSection.becomeAMember")}
+                <Box mt={2}>
+                <a href="./brochure_bhge.pdf" download>
+                  <Button variant="contained" color="tertiary">
+                    {t("BannerSection.downloadMessage")}
                   </Button>
-                </Box>
+                </a>
+              </Box>
                 </Box>
               </Box>
             </Grid>

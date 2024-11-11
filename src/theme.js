@@ -12,11 +12,14 @@ const theme = createTheme({
       main: "#0098fe",
       contrastText: "#fff"
     },
+    quaternary: {
+      main: "#fbe6be",
+    },
   },
   typography: {
-    fontFamily: "Roboto",
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     body1: {
-      fontFamily: "Roboto",
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
       fontSize: "17px",
       lineHeight: 1.4,
       fontWeight: 400,
