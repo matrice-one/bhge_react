@@ -52,10 +52,9 @@ export default function Header({}) {
 
   return (
     <Container >
-      {/* // <AppBar position="static" elevation={0} style={{ backgroundColor: transparent ? "transparent" : "black",}}> */}
       <Toolbar disableGutters sx={{ justifyContent: 'start' }}> {/* disableGutters is the key to removing padding */}
-          <Typography  style={{ marginTop: '1em' }} color={"white"} variant="h5" sx={{ flexGrow: 1, margin: 0}}>
-          <img src={Logo} alt="logo" style={{ height: "50px",}} /> {/* adjust the height as needed */}
+          <Typography  style={{ marginTop: '1em' }} color="quaternary.main" variant="h5" sx={{ flexGrow: 1, margin: 0}}>
+          <img src={Logo} alt="logo" style={{ height: "50px",}} /> 
           </Typography>
           {isMobile ? (
             <>

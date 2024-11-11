@@ -9,7 +9,7 @@ import FeaturesSection from "./FeaturesSection";
 import GallerySection from "./GallerySection";
 import ContactFormSection from "./ContactFormSection";
 import Footer from "./Footer";
-import AboutUsPage from "./AboutUsPage"
+import Supports from "./Supports";
 
 const HomePage = () => {
   return (
@@ -38,10 +38,10 @@ const HomePage = () => {
         </Box>
       </Box>
       <PresentationSection />
+      <Supports />
       <FeaturesSection />
       <MembershipSection />
       <GallerySection />
-      <AboutUsPage/>
       <ContactFormSection />
       <Footer />
     </div>
