@@ -13,7 +13,7 @@ import Support6 from '../media/logos/volley_jeunesse_geneve_sud.png';
 
 function Supports() {
   return (
-    <Box p={4} bgcolor={"quaternary.main"} textAlign="center" style={{ maxHeight: '100vh'}}>
+    <Box p={4} bgcolor={"quaternary.main"} textAlign="center">
         <FullHeightSection>
             <Typography variant="h4" color={"tertiary.main"} gutterBottom>
             Ils nous soutiennent
