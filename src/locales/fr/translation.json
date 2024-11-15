@@ -1,90 +1,77 @@
 {
   "BannerSection": {
-      "teasingMessagePart1": "Pour la construction d'une structure couverte dédiée à la pratique du beach-volley et autres sports de sable toute l'année.",
-      "teasingMessagePart2": "",
-      "participateMessage": "Soutenez-nous en devenant membre!",
-      "downloadMessage": "Téléchargez notre brochure"
+    "teasingMessagePart1": "Pour la construction d'une structure couverte dédiée à la pratique du beach-volley et autres sports de sable toute l'année.",
+    "teasingMessagePart2": "",
+    "participateMessage": "Soutenez-nous en devenant membre!",
+    "downloadMessage": "Téléchargez notre brochure"
   },
   "AboutUsSection": {
     "aboutUs": "À Propos De Nous",
-    "introduction": "“Créée en 2023, Beach Halle Genève est un club affilié à Swiss Volley Région Genève dédiée à la promotion de la creation d'une structure couverte permettant la pratique des sports de sable tels que le beach-volley, le beach-soccer et le beach-tennis dans le Grand Genève. Forte d’une communauté de plus de 150 membres, nous regroupons amateurs et passionnés autour d’une vision commune : offrir une structure pour une pratique toute l'année.\\n
-Notre comité, composé de membres âgés de 20 à 42 ans, allie diversité et expertise :\\n
-	•	Bryan Biderbost, vice-président, coach de beach-volley à Franchise\\n
-	•	Neigeline Rivollat, web design, ingénieure en logiciel\\n
-	•	Cyril Branet, communication, physiothérapeute\\n
-	•	Lara Silva, réseaux sociaux, étudiante\\n
-	•	Jérôme Haldemann, trésorier, finance\\n
-	•	Vittorio Sommadossi, économiste, ingénieur en management\\n
-	•	Ilaria Marchese, sponsoring et collecte de fonds, économiste\\n
-	•	Adrien Walthert, sponsoring, data analyste\\n
-	•	Dario Santandrea, président, management, ingénieur en efficience énergétique\\n
-
-En une année, nous avons organisé un événement sportif, fondé un club actif et structuré, et nous travaillons déjà sur la création d’une académie pour l’année prochaine afin de former les futurs talents de ces sports. Notre objectif : bâtir une communauté inclusive et durable, animée par l’esprit d’équipe et la passion.”,
+    "introduction": "Créée en 2023, Beach Halle Genève est un club affilié à Swiss Volley Région Genève dédié à la promotion de la création d'une structure couverte permettant la pratique des sports de sable tels que le beach-volley, le beach-soccer et le beach-tennis dans le Grand Genève. Forte d’une communauté de plus de 150 membres, nous regroupons amateurs et passionnés autour d’une vision commune : offrir une structure pour une pratique toute l'année.\\nNotre comité, composé de membres âgés de 20 à 42 ans, allie diversité et expertise :\\n• Bryan Biderbost, vice-président, coach de beach-volley à Franchise\\n• Neigeline Rivollat, web design, ingénieure en logiciel\\n• Cyril Branet, communication, physiothérapeute\\n• Lara Silva, réseaux sociaux, étudiante\\n• Jérôme Haldemann, trésorier, finance\\n• Vittorio Sommadossi, économiste, ingénieur en management\\n• Ilaria Marchese, sponsoring et collecte de fonds, économiste\\n• Adrien Walthert, sponsoring, data analyste\\n• Dario Santandrea, président, management, ingénieur en efficience énergétique\\nEn une année, nous avons organisé un événement sportif, fondé un club actif et structuré, et nous travaillons déjà sur la création d’une académie pour l’année prochaine afin de former les futurs talents de ces sports. Notre objectif : bâtir une communauté inclusive et durable, animée par l’esprit d’équipe et la passion.",
     "projectDescription": "",
     "projectGuidance": "",
     "projectAim": "",
     "projectCreation": "",
     "joinUs": "",
     "teamMembers": ""
-  },  
+  },
   "ContactFormSection": {
-      "contactUs": "Contactez-nous",
-      "description": "Beach Center Geneva est une association d'amateurs de beach volley locaux avec un objectif commun. N'hésitez pas à nous contacter!",
-      "successMessage": "Merci pour votre message! Nous vous répondrons dès que possible.",
-      "firstName": "Prénom",
-      "lastName": "Nom",
-      "email": "Adresse e-mail",
-      "whatsapp": "Numéro WhatsApp (si vous souhaitez rejoindre le groupe)",
-      "message": "Message",
-      "submit": "Envoyer"
+    "contactUs": "Contactez-nous",
+    "description": "Beach Center Geneva est une association d'amateurs de beach volley locaux avec un objectif commun. N'hésitez pas à nous contacter!",
+    "successMessage": "Merci pour votre message! Nous vous répondrons dès que possible.",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Adresse e-mail",
+    "whatsapp": "Numéro WhatsApp (si vous souhaitez rejoindre le groupe)",
+    "message": "Message",
+    "submit": "Envoyer"
   },
   "FeaturesSection": {
-      "title": "Une structure couverte pour les sports de sable pour promouvoir...",
-      "features": {
-          "healthAndFitness": "La santé & le fitness",
-          "playingAllYear": "Une communauté qui peut se réunir toute l'année",
-          "skillDevelopment": "Le Développement de compétences",
-          "eventsAndTournaments": "Des Événements & Tournois"
-      },
-      "featureDescriptions": {
-          "playingAllYear": "Une installation protégée signifie profiter du volleyball de plage à tout moment de l'année, quelles que soient les conditions météorologiques. Les terrains seront disponibles à la location.",
-          "healthAndFitness": "L'activité physique dans le sable contribue à une meilleure condition cardiovasculaire, à une amélioration du tonus musculaire et à une meilleure coordination. Tout le monde, des enfants aux athlètes, peut en bénéficier!",
-          "skillDevelopment": "En travaillant avec des programmes éprouvés et des entraîneurs, nous prévoyons d'offrir des ateliers et des cours aux joueurs de tous niveaux pour améliorer leurs compétences.",
-          "eventsAndTournaments": "Des tournois nationaux de beach volley aux événements privés, nous fournirons un espace pour les joueurs de tous niveaux pour leur permettre de démontrer leurs compétences et profiter de jeux à haute intensité."
-      }
+    "title": "Une structure couverte pour les sports de sable pour promouvoir...",
+    "features": {
+      "healthAndFitness": "La santé & le fitness",
+      "playingAllYear": "Une communauté qui peut se réunir toute l'année",
+      "skillDevelopment": "Le Développement de compétences",
+      "eventsAndTournaments": "Des Événements & Tournois"
+    },
+    "featureDescriptions": {
+      "playingAllYear": "Une installation protégée signifie profiter du volleyball de plage à tout moment de l'année, quelles que soient les conditions météorologiques. Les terrains seront disponibles à la location.",
+      "healthAndFitness": "L'activité physique dans le sable contribue à une meilleure condition cardiovasculaire, à une amélioration du tonus musculaire et à une meilleure coordination. Tout le monde, des enfants aux athlètes, peut en bénéficier!",
+      "skillDevelopment": "En travaillant avec des programmes éprouvés et des entraîneurs, nous prévoyons d'offrir des ateliers et des cours aux joueurs de tous niveaux pour améliorer leurs compétences.",
+      "eventsAndTournaments": "Des tournois nationaux de beach volley aux événements privés, nous fournirons un espace pour les joueurs de tous niveaux pour leur permettre de démontrer leurs compétences et profiter de jeux à haute intensité."
+    }
   },
   "Footer": {
-      "copyright": "© 2023 Graphisme par Julietta Saccardi & Développement Web par Neigeline Rivollat"
+    "copyright": "© 2023 Graphisme par Julietta Saccardi & Développement Web par Neigeline Rivollat"
   },
   "FormModal": {
-      "membershipRequest": "Formulaire de demande d'adhésion",
-      "description": "Entrez vos détails afin que nous puissions vous contacter pour les prochaines étapes.",
-      "successMessage": "Merci pour votre demande. Nous vous contacterons bientôt!"
+    "membershipRequest": "Formulaire de demande d'adhésion",
+    "description": "Entrez vos détails afin que nous puissions vous contacter pour les prochaines étapes.",
+    "successMessage": "Merci pour votre demande. Nous vous contacterons bientôt!"
   },
   "GallerySection": {
     "credits": "Photos réalisées par www.redzonefoto.com"
   },
   "Header": {
-      "project": "Le projet",
-      "becomeAMember": "Devenir membre",
-      "aboutUs": "À propos de nous",
-      "contactUs": "Contactez-nous"
+    "project": "Le projet",
+    "becomeAMember": "Devenir membre",
+    "aboutUs": "À propos de nous",
+    "contactUs": "Contactez-nous"
   },
   "MembershipSection": {
-      "becomeAMember": "Votre soutien est essentiel pour la réalisation de notre projet. Devenez membre dès aujourd'hui!",
-      "crowdfundingMembership": "Adhésion par financement participatif",
-      "freeMembership": "Adhésion gratuite",
-      "crowdfundingMembershipsubtitle": "Soutenez-nous en tant que membre d'honneur",
-      "freeMembershipsubtitle": "Soutenez-nous avec une adhésion gratuite",
-      "crowdfundingDescription": "Lorsque le projet sera à une phase plus avancée, nous envisageons de lancer une campagne de financement participatif, tout comme l'a fait le projet réussi de Zürich. Les membres contributeurs auront des avantages et des privilèges supplémentaires, qui restent à être définis aujourd'hui.",
-      "freeMembershipDescription": "Aidez-nous à donner plus de force au projet et rejoignez notre communauté de déjà plus de 150 membres en vous inscrivant gratuitement. En tant que membre, vous recevrez si vous le souhaitez des mises à jour sur notre progression, des invitations à des événements spéciaux et des offres exclusives lorsque le projet sera concrêtisé.",
-      "crowdfundingMembershipsButton": "Devenir membre d'honneur",
-      "crowdfundingMembershipButton": "Devenir membre gratuitement"
+    "becomeAMember": "Votre soutien est essentiel pour la réalisation de notre projet. Devenez membre dès aujourd'hui!",
+    "crowdfundingMembership": "Adhésion par financement participatif",
+    "freeMembership": "Adhésion gratuite",
+    "crowdfundingMembershipsubtitle": "Soutenez-nous en tant que membre d'honneur",
+    "freeMembershipsubtitle": "Soutenez-nous avec une adhésion gratuite",
+    "crowdfundingDescription": "Lorsque le projet sera à une phase plus avancée, nous envisageons de lancer une campagne de financement participatif, tout comme l'a fait le projet réussi de Zürich. Les membres contributeurs auront des avantages et des privilèges supplémentaires, qui restent à être définis aujourd'hui.",
+    "freeMembershipDescription": "Aidez-nous à donner plus de force au projet et rejoignez notre communauté de déjà plus de 150 membres en vous inscrivant gratuitement. En tant que membre, vous recevrez si vous le souhaitez des mises à jour sur notre progression, des invitations à des événements spéciaux et des offres exclusives lorsque le projet sera concrêtisé.",
+    "crowdfundingMembershipsButton": "Devenir membre d'honneur",
+    "crowdfundingMembershipButton": "Devenir membre gratuitement"
   },
   "PresentationSection": {
-      "ourProject": "Notre projet",
-      "projectDescription": "Notre objectif est de construire une installation de la plus haute qualité, destinée à la fois aux joueurs récréatifs et aux joueurs compétitifs. La structure comportera des terrains de sable de qualité dans une structure couverte qui pourra ainsi proposer des cours, locations de terrains et évènements tout l'année.",
-      "becomeAMember": "Devenir membre"
+    "ourProject": "Notre projet",
+    "projectDescription": "Notre objectif est de construire une installation de la plus haute qualité, destinée à la fois aux joueurs récréatifs et aux joueurs compétitifs. La structure comportera des terrains de sable de qualité dans une structure couverte qui pourra ainsi proposer des cours, locations de terrains et évènements tout l'année.",
+    "becomeAMember": "Devenir membre"
   }
-  
 }
