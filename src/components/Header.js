@@ -41,7 +41,7 @@ export default function Header({}) {
     <ListItem button onClick={() => {scrollTo("membershipsection"); handleDrawerToggle();}}>
       <ListItemText primary={t("Header.becomeAMember")}/>
     </ListItem>
-    <ListItem button onClick={() => {scrollTo("aboutussection"); handleDrawerToggle();}}>
+    <ListItem button onClick={() => {scrollTo("presentationsection"); handleDrawerToggle();}}>
       <ListItemText primary={t("Header.aboutUs")} />
     </ListItem>
     <ListItem button onClick={() => {scrollTo("contactussection"); handleDrawerToggle();}}>
@@ -78,7 +78,7 @@ export default function Header({}) {
             <Box display="flex" gap={3}>
               <Button onClick={() => scrollTo("presentationsection")} smooth={true} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> {t("Header.project")} </Typography></Button>
               <Button onClick={() => scrollTo("membershipsection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>{t("Header.becomeAMember")} </Typography></Button>
-              <Button onClick={() => scrollTo("aboutussection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>{t("Header.aboutUs")}</Typography></Button>
+              <Button onClick={() => scrollTo("presentationsection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>{t("Header.aboutUs")}</Typography></Button>
               <Button onClick={() => scrollTo("contactussection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> {t("Header.contactUs")} </Typography></Button>
             </Box>
           )}
