@@ -8,6 +8,7 @@ import { Box,} from "@mui/material";
 import FeaturesSection from "./FeaturesSection";
 import GallerySection from "./GallerySection";
 import ContactFormSection from "./ContactFormSection";
+import AboutUsSection from "./AboutUsSection";
 import Footer from "./Footer";
 import Supports from "./Supports";
 
@@ -42,6 +43,7 @@ const HomePage = () => {
       <FeaturesSection />
       <MembershipSection />
       <GallerySection />
+      <AboutUsSection />
       <ContactFormSection />
       <Footer />
     </div>
