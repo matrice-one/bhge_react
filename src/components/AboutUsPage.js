@@ -3,7 +3,7 @@ import React from "react"
 import { Box, Typography, useTheme,useMediaQuery, Container } from "@mui/material"
 import { useTranslation } from "react-i18next";
 
-const HomePage = () => {
+const AboutUsPage = () => {
   const {t} = useTranslation();
     const theme = useTheme();
     const matchesSmUp = useMediaQuery(theme.breakpoints.up("sm"));
@@ -50,4 +50,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage 
+export default AboutUsPage; 
