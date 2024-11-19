@@ -26,7 +26,7 @@ function GallerySection() {
             <img src={imageGallery4} alt="Section" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           </Grid>
         </Grid>
-        <Box bgcolor={"primary.main"} p={2}>
+        <Box bgcolor={"quaternary.main"} p={2}>
         <Typography variant="body1" color={"secondary.main"} align="center">
         {t("GallerySection.credits")}
         </Typography>

@@ -4,7 +4,7 @@ import FullHeightSection from './reusable_components/FullHeightSection';
 // Import logos
 import Support1 from '../media/logos/geneva_canton.png';
 import Support2 from '../media/logos/swiss_volley_region_geneve.png';
-import Support3 from '../media/logos/Ville_de_Geneve.jpg';
+import Support3 from '../media/logos/franchise.png';
 import Support4 from '../media/logos/VBC_Etoile_Geneve.jpeg';
 import Support5 from '../media/logos/PEPS_HQ.png';
 import Support6 from '../media/logos/volley_jeunesse_geneve_sud.png';

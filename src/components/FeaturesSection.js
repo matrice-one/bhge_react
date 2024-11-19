@@ -23,8 +23,8 @@ function FeaturesSection() {
                 {features.map((feature, index) => (
                   <Grid item xs={12} sm={6} md={3} key={index}>
                     <Card sx={{ height: "100%", border: "4px solid", borderColor: "tertiary.main", display: "grid", gridTemplateRows: "1fr 1fr" }}>
-                      <Box sx={{ bgcolor:"quaternary.main", borderBottom: "2px solid", borderColor: "tertiary.main", pt:3, pb: 2, px: 2 }}>
-                        <Typography variant="h5" color={"secondary.main"} gutterBottom >
+                      <Box sx={{ bgcolor:"quaternary.main", borderBottom: "2px solid", borderColor: "tertiary.main", pt:3, pb: 2, px: 2, alignContent:"center"}}>
+                        <Typography variant="h5" color={"secondary.main"} gutterBottom alignContent={"center"} >
                           {feature.title}
                         </Typography>
                       </Box>
