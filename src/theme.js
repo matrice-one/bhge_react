@@ -10,51 +10,51 @@ const theme = createTheme({
     },
     tertiary: {
       main: "#0098fe",
-      contrastText: "#fff"
+      contrastText: "#fff",
     },
     quaternary: {
       main: "#fbe6be",
     },
   },
   typography: {
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     body1: {
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-      fontSize: "17px",
-      lineHeight: 1.4,
+      fontFamily:
+        '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+      fontSize: "18px",
+      lineHeight: 1.8,
       fontWeight: 400,
-    },    
+    },
     h1: {
       fontFamily: "Staatliches",
-      fontSize: '4rem',
+      fontSize: "4rem",
     },
     h2: {
       fontFamily: "Staatliches",
-      fontSize: '40px',
+      fontSize: "40px",
     },
     h3: {
       fontFamily: "Staatliches",
-      fontSize: '3rem',
+      fontSize: "3rem",
     },
     h4: {
       fontFamily: "Staatliches",
 
-      fontSize: '2.5rem',
+      fontSize: "2.5rem",
     },
     h5: {
       fontFamily: "Staatliches",
 
-      fontSize: '24px',
+      fontSize: "24px",
     },
     h6: {
       fontFamily: "Roboto",
-      fontSize: '15px',
+      fontSize: "15px",
       fontWeight: 400,
       // fontWeight: "bolder"
     },
-  }
-  
-}
-);
+  },
+});
 
 export default theme;

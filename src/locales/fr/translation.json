@@ -7,10 +7,10 @@
   },
   "AboutUsSection": {
     "aboutUs": "À Propos De Nous",
-    "introduction": "Créée en 2023, Beach Halle Genève est un club affilié à Swiss Volley Région Genève dédié à la promotion de la création d'une structure couverte permettant la pratique des sports de sable tels que le beach-volley, le beach-soccer et le beach-tennis dans le Grand Genève. Forte d’une communauté de plus de 150 membres, nous regroupons amateurs et passionnés autour d’une vision commune : offrir une structure pour une pratique toute l'année.",
-    "projectDescription": "Notre comité, composé de membres âgés de 20 à 42 ans, allie diversité et expertise :",
+    "introduction": "Créée en 2023, Beach Halle Genève est un <br>club affilié à Swiss Volley Région Genève</br> dédié à la promotion de la création d'une structure couverte permettant la pratique des sports de sable tels que le beach-volley, le beach-soccer et le beach-tennis dans le Grand Genève. Forte d’une communauté de plus de 150 membres, nous regroupons amateurs et passionnés autour d’une vision commune : offrir une structure pour une pratique toute l'année.",
+    "projectDescription": "Notre comité, composé de membres âgés de 20 à 37 ans, allie diversité et expertise :",
     "projectGuidance": "<li>Bryan Biderbost, vice-président, coach de beach-volley à Franchise</li><li>Neigeline Rivollat, web design, ingénieure en logiciel</li><li>Cyril Branet, communication, physiothérapeute</li><li>Lara Silva, réseaux sociaux, étudiante</li><li>Jérôme Haldemann, trésorier, finance</li><li>Vittorio Sommadossi, économiste, ingénieur en management</li><li>Ilaria Marchese, sponsoring et collecte de fonds, économiste</li><li>Adrien Walthert, sponsoring, data analyste</li><li>Dario Santandrea, président, management, ingénieur en efficience énergétique</li>",
-    "projectAim": "En une année, nous avons organisé un événement sportif, fondé un club actif et structuré, et nous travaillons déjà sur la création d’une académie pour l’année prochaine afin de former les futurs talents de ces sports. Notre objectif : bâtir une communauté inclusive et durable, animée par l’esprit d’équipe et la passion.",
+    "projectAim": "En une année, nous avons... <lu><li>organisé une dizaine de tournois licenciés</li><li>organisé un événement sportif</li><li>fondé un club actif et structuré</li>Enfin, nous travaillons déjà sur la création d’une académie pour l’année prochaine afin de former les futurs talents de ces sports. <br></br>Notre objectif : bâtir une communauté inclusive et durable, animée par l’esprit d’équipe et la passion.",
     "projectCreation": "",
     "joinUs": "",
     "teamMembers": ""
@@ -65,7 +65,7 @@
     "crowdfundingMembershipsubtitle": "Soutenez-nous en tant que membre d'honneur",
     "freeMembershipsubtitle": "Soutenez-nous avec une adhésion gratuite",
     "crowdfundingDescription": "Lorsque le projet sera à une phase plus avancée, nous envisageons de lancer une campagne de financement participatif, tout comme l'a fait le projet réussi de Zürich. Les membres contributeurs auront des avantages et des privilèges supplémentaires, qui restent à être définis aujourd'hui.",
-    "freeMembershipDescription": "Aidez-nous à donner plus de force au projet et rejoignez notre communauté de déjà plus de 150 membres en vous inscrivant gratuitement. En tant que membre, vous recevrez si vous le souhaitez des mises à jour sur notre progression, des invitations à des événements spéciaux et des offres exclusives lorsque le projet sera concrêtisé.",
+    "freeMembershipDescription": "Aidez-nous à donner plus de force au projet et rejoignez notre communauté de déjà plus de 250 membres en vous inscrivant gratuitement. En tant que membre, vous recevrez si vous le souhaitez des mises à jour sur notre progression, des invitations à des événements spéciaux et des offres exclusives lorsque le projet sera concrêtisé.",
     "crowdfundingMembershipsButton": "Devenir membre d'honneur",
     "crowdfundingMembershipButton": "Devenir membre gratuitement"
   },
