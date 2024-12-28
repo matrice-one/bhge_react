@@ -96,8 +96,7 @@ const AboutUsPage = () => {
                   {t("AboutUsSection.projectDescription")}
                   <ul>
                     <li>
-                      <b>Bryan Biderbost</b>, vice-président, coach de
-                      beach-volley à Franchise
+                      <b>Bryan Biderbost</b>, vice-président, coach pour le club de beach volley Vernier
                     </li>
                     <li>
                       <b>Neigeline Rivollat</b>, web design, ingénieure en
