@@ -128,21 +128,14 @@ const AboutUsPage = () => {
                     </li>
                   </ul>
                 </Typography>
+                <Typography color={"primary"} variant={"body1"} align="justify">
+                  BHGE c&apos;est aussi...
+                  </Typography>
+                  <Typography color={"primary"} variant={"mini"} align="justify">
+                Skachkova Natalia, Yanturina Darles Aysylu, Schell François, Pieretti Giorgio, Donnet Virginie, Lutz Christina, Garcia Simon Keziah, Scarabotto Alessandro, Gazzola Carlotta, Sheremetyev Viacheslav, Schmid Eric, Young Andrew, Guevara Ylena, Racovita Matei, Bonina Eleonora Weronika, Giuliano Gianluca, Moinat Emma, Darles Guillaume, Sottocasa Quentin, Provost Julien, Bianco Stefano, Fetter Gaetan, Jakob Clara, Cristella Leonardo, Barkats Victor, Mazzieri Fabien, Estevanin Leal Heloy, Garnier Nicole, Bellini Elisa, Meyer Etienne, Rey Sánchez Claudia, Adelantado Achille, Chok Ludovic, Pélissier Antoine, Beade Sebastian, Menkveld Jordan, Mansilla Jaime, Piasco Alberto, Zornio Eva, Métral Eric, Chavaz Didier, Zlotykamien Romain, acea yeans, Ivan Liberti, Keller Maël, Pelivani Ledia, Beade Sebastian, Lecygne Fanneau, Paskins Keith, Valente Paolo, Nitzsche-Bell David... et bien d&apos;autres encore!
+                </Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography color={"primary"} variant={"body1"} align="justify">
-                  <br></br>
-                  <br></br>
-                  {t("AboutUsSection.projectCreation")}
-                  <br></br>
-                  <br></br>
-                  {t("AboutUsSection.joinUs")}
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  {t("AboutUsSection.teamMembers")}
-                </Typography>
               </Grid>
             </Grid>
           </FullHeightSection>

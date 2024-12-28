@@ -26,6 +26,13 @@ const theme = createTheme({
       lineHeight: 1.8,
       fontWeight: 400,
     },
+    mini: {
+      fontFamily:
+        '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+      fontSize: "10px",
+      lineHeight: 1.8,
+      fontWeight: 400,
+    },
     h1: {
       fontFamily: "Staatliches",
       fontSize: "4rem",
