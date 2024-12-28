@@ -2,7 +2,8 @@
     "BannerSection": {
         "teasingMessagePart1": "Indoor Beach Volleyball",
         "teasingMessagePart2": "coming soon to Geneva!",
-        "participateMessage": "Support us by becoming a member"
+        "participateMessage": "Support us by becoming a member",
+        "downloadMessage": "Download our brochure"
       },
     "AboutUsSection": {
       "aboutUs": "About Us",
@@ -13,6 +14,9 @@
       "projectCreation": "The creation of Geneva Beach Halle will bring significant benefits to the sports community and this region, increasing the number of practitioners, the quality of players, and attracting sports tourism. Moreover, the sports center will be able to host national and international level competitions, making Geneva a global reference for these sports. In addition, the association aims to promote sand fitness training for all athletes, offering a unique and beneficial experience for physical fitness and health.",
       "joinUs": "Join us and support the Geneva Beach Halle Association, contributing to creating a bright and dynamic future for beach volleyball, beach soccer, beach tennis, and sand fitness training in the Greater Geneva region and in French-speaking Switzerland! So, shall we 'hit the sand' ",
       "teamMembers": "Amandine, Adrien, Bryan, Carlotta, Dario, Ilaria, Julietta, Neigeline, Vittorio"
+    },
+    "Supports": {
+      "title": "They support us"
     },
     "ContactFormSection": {
       "contactUs": "Contact Us",

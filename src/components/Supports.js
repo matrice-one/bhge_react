@@ -13,16 +13,19 @@ import cern_logo from "../media/logos/CERN.png";
 import satigny_logo from "../media/logos/satigny.png";
 import viry_logo from "../media/logos/viry.png";
 import prevessin_logo from "../media/logos/prevessin.png";
+import { useTranslation } from "react-i18next";
 
 // Add more imports as needed
 
 function Supports() {
+    const { t } = useTranslation();
+  
   return (
     <Box p={4} bgcolor={"quaternary.main"} textAlign="center">
       <Container maxWidth="lg">
         <FullHeightSection>
           <Typography variant="h4" color={"tertiary.main"} gutterBottom>
-            Ils nous soutiennent
+          {t("Supports.title")}
           </Typography>
           <Box>
             <Grid container spacing={4} justifyContent="center">

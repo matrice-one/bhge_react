@@ -50,13 +50,22 @@
     "successMessage": "Merci pour votre demande. Nous vous contacterons bientôt!"
   },
   "GallerySection": {
-    "credits": "Photos réalisées par www.redzonefoto.com"
+    "title": "Nos champions soutiennent le projet",
+    "subtitle": "&quot;Tous derrière le projet de BHGE!&quot;",
+    "metralMessage": "&quot;Une halle de beach à Genève permettrait de développer
+                  non-seulement la relève du beach-volley de compétition mais
+                  stimuler également l’activité physique pour tous, tout au long
+                  de l’année. Soutenez ce projet ambitieux qui promet un impact
+                  positif sur la communauté sportive locale!&quot;"
   },
   "Header": {
     "project": "Le projet",
     "becomeAMember": "Devenir membre",
     "aboutUs": "À propos de nous",
     "contactUs": "Contactez-nous"
+  },
+  "Supports": {
+    "title": "Ils nous soutiennent"
   },
   "MembershipSection": {
     "becomeAMember": "Votre soutien est essentiel pour la réalisation de notre projet. Devenez membre dès aujourd'hui!",
