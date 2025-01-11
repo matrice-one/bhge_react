@@ -13,7 +13,7 @@ import cern_logo from "../media/logos/CERN.png";
 import satigny_logo from "../media/logos/satigny.png";
 import viry_logo from "../media/logos/viry.png";
 import prevessin_logo from "../media/logos/prevessin.png";
-
+import chenois_logo from "../media/logos/chenois.png";
 // Add more imports as needed
 
 function Supports() {
@@ -45,6 +45,19 @@ function Supports() {
                 <img
                   src={svrg_logo}
                   alt="swiss volley region genève logo"
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "150px",
+                    height: "auto",
+                  }}
+                />
+                </a>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <a href="https://chenoisvolley.ch/">
+                <img
+                  src={chenois_logo}
+                  alt="genève chênois volley logo"
                   style={{
                     maxWidth: "100%",
                     maxHeight: "150px",
