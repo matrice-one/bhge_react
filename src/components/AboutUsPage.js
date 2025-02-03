@@ -96,14 +96,22 @@ const AboutUsPage = () => {
                   {t("AboutUsSection.projectDescription")}
                   <ul>
                     <li>
-                      <b>Bryan Biderbost</b>, vice-président, coach pour le club de beach volley Vernier
+                      <b>Cyril Branet</b>, communication, physiothérapeute
+                    </li>
+                    <li>
+                      <b>Dario Santandrea</b>, président, management, ingénieur
+                      en efficience énergétique
+                    </li>
+                    <li>
+                      <b>Bryan Biderbost</b>, vice-président, coach pour le club
+                      de beach volley Vernier
+                    </li>
+                    <li>
+                      <b>Anastasiia Amotova</b>, réseaux sociaux
                     </li>
                     <li>
                       <b>Neigeline Rivollat</b>, web design, ingénieure en
                       logiciel
-                    </li>
-                    <li>
-                      <b>Cyril Branet</b>, communication, physiothérapeute
                     </li>
                     <li>
                       <b>Lara Silva</b>, réseaux sociaux, étudiante
@@ -122,21 +130,31 @@ const AboutUsPage = () => {
                     <li>
                       <b>Adrien Walthert</b>, sponsoring, data analyste
                     </li>
-                    <li>
-                      <b>Dario Santandrea</b>, président, management, ingénieur
-                      en efficience énergétique
-                    </li>
                   </ul>
                 </Typography>
                 <Typography color={"primary"} variant={"body1"} align="justify">
                   BHGE c&apos;est aussi...
-                  </Typography>
-                  <Typography color={"primary"} variant={"mini"} align="justify">
-                Skachkova Natalia, Yanturina Darles Aysylu, Schell François, Pieretti Giorgio, Donnet Virginie, Lutz Christina, Garcia Simon Keziah, Scarabotto Alessandro, Gazzola Carlotta, Sheremetyev Viacheslav, Schmid Eric, Young Andrew, Guevara Ylena, Racovita Matei, Bonina Eleonora Weronika, Giuliano Gianluca, Moinat Emma, Darles Guillaume, Sottocasa Quentin, Provost Julien, Bianco Stefano, Fetter Gaetan, Jakob Clara, Cristella Leonardo, Barkats Victor, Mazzieri Fabien, Estevanin Leal Heloy, Garnier Nicole, Bellini Elisa, Meyer Etienne, Rey Sánchez Claudia, Adelantado Achille, Chok Ludovic, Pélissier Antoine, Beade Sebastian, Menkveld Jordan, Mansilla Jaime, Piasco Alberto, Zornio Eva, Métral Eric, Chavaz Didier, Zlotykamien Romain, acea yeans, Ivan Liberti, Keller Maël, Pelivani Ledia, Beade Sebastian, Lecygne Fanneau, Paskins Keith, Valente Paolo, Nitzsche-Bell David... et bien d&apos;autres encore!
+                </Typography>
+                <Typography color={"primary"} variant={"mini"} align="justify">
+                  Skachkova Natalia, Yanturina Darles Aysylu, Schell François,
+                  Pieretti Giorgio, Donnet Virginie, Lutz Christina, Garcia
+                  Simon Keziah, Scarabotto Alessandro, Gazzola Carlotta,
+                  Sheremetyev Viacheslav, Schmid Eric, Young Andrew, Guevara
+                  Ylena, Racovita Matei, Bonina Eleonora Weronika, Giuliano
+                  Gianluca, Moinat Emma, Darles Guillaume, Sottocasa Quentin,
+                  Provost Julien, Bianco Stefano, Fetter Gaetan, Jakob Clara,
+                  Cristella Leonardo, Barkats Victor, Mazzieri Fabien, Estevanin
+                  Leal Heloy, Garnier Nicole, Bellini Elisa, Meyer Etienne, Rey
+                  Sánchez Claudia, Adelantado Achille, Chok Ludovic, Pélissier
+                  Antoine, Beade Sebastian, Menkveld Jordan, Mansilla Jaime,
+                  Piasco Alberto, Zornio Eva, Métral Eric, Chavaz Didier,
+                  Zlotykamien Romain, acea yeans, Ivan Liberti, Keller Maël,
+                  Pelivani Ledia, Beade Sebastian, Lecygne Fanneau, Paskins
+                  Keith, Valente Paolo, Nitzsche-Bell David... et bien
+                  d&apos;autres encore!
                 </Typography>
               </Grid>
-              <Grid item xs={12}>
-              </Grid>
+              <Grid item xs={12}></Grid>
             </Grid>
           </FullHeightSection>
         </Container>
