@@ -2,7 +2,7 @@
 import * as React from "react";
 import {Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem, ListItemText, useTheme, useMediaQuery, Container } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import Logo from "../media/images/logo_3.png";
+import Logo from "../media/images/logo_blue.svg";
 import { animateScroll as scroll } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
@@ -47,6 +47,10 @@ export default function Header({}) {
     <ListItem button onClick={() => {scrollTo("contactussection"); handleDrawerToggle();}}>
       <ListItemText primary={t("Header.contactUs")}/>
     </ListItem>
+    <ListItem button onClick={() => {scrollTo("contactussection"); handleDrawerToggle();}}>
+      <ListItemText primary={t("Header.school")}/>
+    </ListItem>
+
   </List>
   );
 
@@ -80,6 +84,8 @@ export default function Header({}) {
               <Button onClick={() => scrollTo("membershipsection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>{t("Header.becomeAMember")} </Typography></Button>
               <Button onClick={() => scrollTo("aboutussection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>{t("Header.aboutUs")}</Typography></Button>
               <Button onClick={() => scrollTo("contactussection")} color="primary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> {t("Header.contactUs")} </Typography></Button>
+              <Button sx={{ backgroundColor: "tertiary.main" }}  onClick={() => window.open("https://your-link-here.com", "_blank")} color="secondary"><Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}> {t("Header.school")} </Typography></Button>
+
             </Box>
           )}
         </Toolbar>
