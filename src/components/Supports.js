@@ -16,7 +16,7 @@ import prevessin_logo from "../media/logos/prevessin.png";
 import chenois_logo from "../media/logos/chenois.png";
 import itu_logo from "../media/logos/ITU_volleyball.png";
 import sso_logo from "../media/logos/SSO.png";
-import vbc_logo from "../media/logos/VBC.png";
+import vbc_logo from "../media/logos/VBCPLO.png";
 
 function Supports() {
   return (
@@ -212,7 +212,7 @@ function Supports() {
                 </a>
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
-                <a href="https://leagues.teamlinkt.com/viryvolleyball/LeClub">
+                <a href="https://vbcplo.ch/">
                   <img
                     src={vbc_logo}
                     alt="VBC logo"
