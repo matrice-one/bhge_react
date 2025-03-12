@@ -11,6 +11,7 @@ import ContactFormSection from "./ContactFormSection";
 import Footer from "./Footer";
 import Supports from "./Supports";
 import AboutUsPage from "./AboutUsPage";
+import SchoolBanner from "./SchoolBanner";
 
 const HomePage = () => {
   return (
@@ -37,6 +38,7 @@ const HomePage = () => {
           <div style={{ flex: 0.5 }}></div>
         </Box>
       </Box>
+      <SchoolBanner />
       <PresentationSection />
       <Supports />
       <FeaturesSection />
