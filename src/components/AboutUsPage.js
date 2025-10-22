@@ -96,9 +96,6 @@ const AboutUsPage = () => {
                   {t("AboutUsSection.projectDescription")}
                   <ul>
                     <li>
-                      <b>Cyril Branet</b>, communication, physiothérapeute
-                    </li>
-                    <li>
                       <b>Dario Santandrea</b>, président, management, ingénieur
                       en efficience énergétique
                     </li>
@@ -107,28 +104,21 @@ const AboutUsPage = () => {
                       de beach volley Vernier
                     </li>
                     <li>
-                      <b>Anastasiia Amotova</b>, réseaux sociaux
-                    </li>
-                    <li>
                       <b>Neigeline Rivollat</b>, web design, ingénieure en
-                      logiciel
-                    </li>
-                    <li>
-                      <b>Lara Silva</b>, réseaux sociaux, étudiante
-                    </li>
-                    <li>
-                      <b>Jérôme Haldemann</b>, trésorier, finance
-                    </li>
-                    <li>
-                      <b>Vittorio Sommadossi</b>, économiste, ingénieur en
-                      management
+                      logiciels
                     </li>
                     <li>
                       <b>Ilaria Marchese</b>, sponsoring et collecte de fonds,
                       économiste
                     </li>
                     <li>
-                      <b>Adrien Walthert</b>, sponsoring, data analyste
+                      <b>Katarina Valastanova </b>, responsable tournois, comptable
+                    </li>
+                    <li>
+                      <b>Corentin Loriol </b>, responsable école, ingénieur en logiciels
+                    </li>
+                    <li>
+                      <b>Jérôme Haldemann</b>, trésorier, finance
                     </li>
                   </ul>
                 </Typography>
