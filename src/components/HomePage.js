@@ -11,7 +11,7 @@ import ContactFormSection from "./ContactFormSection";
 import Footer from "./Footer";
 import Supports from "./Supports";
 import AboutUsPage from "./AboutUsPage";
-import SchoolBanner from "./SchoolBanner";
+import AdvertisingBanner from "./AdvertisingBanner";
 
 const HomePage = () => {
   return (
@@ -38,7 +38,7 @@ const HomePage = () => {
           <div style={{ flex: 0.5 }}></div>
         </Box>
       </Box>
-      <SchoolBanner />
+      <AdvertisingBanner />
       <PresentationSection />
       <Supports />
       <FeaturesSection />
