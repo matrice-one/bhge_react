@@ -163,7 +163,7 @@ export default function Header({}) {
             </Button>
             <Button
               sx={{ backgroundColor: "tertiary.main" }}
-              onClick={() => window.open("http://bit.ly/3QPbshM", "_blank")}
+              onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScO4nhYrmSkj_18ApFHDG3u1IpFywWTIhVnmEfg8EzVn4wrEw/viewform?usp=dialog", "_blank")}
               color="secondary"
             >
               <Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>
