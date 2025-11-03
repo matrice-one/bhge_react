@@ -13,7 +13,7 @@ A CI/CD has been implemented in .github. Thanks to it, any branch merged into ma
 - npm installed
 
 ### Steps:
-- run `npm install` to install all packages specified in 
+- run `npm install` to install all packages specified in the package.json file.
 - run `npm run start` to run locally, then in your browser go on http://localhost:3000/ to view.
 
 ### Gitflow
