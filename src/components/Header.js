@@ -161,7 +161,7 @@ export default function Header({}) {
                 {t("Header.contactUs")}{" "}
               </Typography>
             </Button>
-            <Button
+            {/* <Button
               sx={{ backgroundColor: "tertiary.main" }}
               onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScO4nhYrmSkj_18ApFHDG3u1IpFywWTIhVnmEfg8EzVn4wrEw/viewform?usp=dialog", "_blank")}
               color="secondary"
@@ -170,7 +170,7 @@ export default function Header({}) {
                 {" "}
                 {t("Header.school")}{" "}
               </Typography>
-            </Button>
+            </Button> */}
           </Box>
         )}
       </Toolbar>
