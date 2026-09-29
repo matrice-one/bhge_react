@@ -167,7 +167,7 @@ export default function Header({}) {
               color="secondary"
             >
               <Typography color={"primary"} variant="h6" sx={{ flexGrow: 1 }}>
-                Bryan taking over
+                Ecole
               </Typography>
             </Button> 
           </Box>
