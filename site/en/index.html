@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Beach Halle Genève · beach volleyball club</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="alternate" hreflang="fr" href="https://bhge.ch/">
+<link rel="alternate" hreflang="en" href="https://bhge.ch/en/">
+<meta name="theme-color" content="#14213D">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bhge.ch/en/">
+<meta property="og:title" content="Beach Halle Genève">
+<meta property="og:description" content="Geneva’s beach volleyball club. A school, tournaments, and an indoor hall still to build.">
+<meta property="og:image" content="https://bhge.ch/img/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Geneva's beach volleyball club. 100 students, 23 official B tournaments and a project for an indoor beach hall.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500&display=swap">
+<style>
+html,body{margin:0;padding:0}
+img{max-width:100%}
+/* Layout: club poster. Solid brand blocks (navy, blue, sand, white), giant numbers, the logo used as a graphic, photos edge to edge. Single deliberate look, brand colours in both OS themes. */
+:root{
+  --navy:#14213D; --blue:#0098FF; --sand:#EEBE79; --white:#FFFFFF; --ink:#14213D; --grey:#5B6478;
+  --display:"Oswald","Arial Narrow",Impact,sans-serif;
+  --body:"Roboto",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --gl:max(20px,env(safe-area-inset-left,0px)); --gr:max(20px,env(safe-area-inset-right,0px));
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--white);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--navy)}
+h1,h2,h3,p{margin:0}
+h2{font:500 clamp(2.2rem,4.8vw,4.2rem)/1 var(--display);text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
+a:focus-visible{outline:3px solid var(--sand);outline-offset:3px}
+.wrap{max-width:1280px;margin:0 auto;padding-left:var(--gl);padding-right:var(--gr)}
+.pad{padding-block:clamp(72px,10vw,136px)}
+.btn{display:inline-block;font:700 1rem/1 var(--display);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:18px 26px;background:var(--sand);color:var(--navy);transition:background .2s ease,color .2s ease}
+.btn:hover{background:#fff;color:var(--navy)}
+.btn.dark{background:var(--navy);color:#fff}
+.btn.dark:hover{background:#2A3B63;color:#fff}
+
+/* Top bar */
+.top{position:absolute;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:20;color:#fff}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;height:76px}
+.top a{color:#fff;text-decoration:none;font:500 .95rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase}
+.top nav{display:flex;gap:28px}
+@media (max-width:760px){.top nav a:not(.ig):not(.lang){display:none}}
+.top nav a.lang{border:1px solid rgba(255,255,255,.55);padding:6px 9px;margin:-7px 0}
+
+/* Hero */
+.hero{position:relative;background:var(--navy) url("../img/hero.jpg") 62% 30%/cover no-repeat;color:#fff;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,33,61,.25) 0%,rgba(20,33,61,.1) 35%,rgba(20,33,61,.95) 92%)}
+.hero .wrap{min-height:clamp(600px,92vh,900px);display:grid;align-content:end;gap:28px;padding-block:120px 56px}
+.hero svg{width:clamp(240px,44vw,600px);height:auto;display:block}
+.hero-line{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px}
+.hero-line p{font:500 clamp(1.3rem,2.4vw,1.9rem)/1.15 var(--display);text-transform:uppercase;letter-spacing:.02em;max-width:24ch}
+
+/* Numbers */
+.numbers{background:#F5EBDA;color:var(--navy)}
+.numbers .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px 24px;padding-block:clamp(56px,8vw,96px)}
+.num{border-top:3px solid var(--navy);padding-top:22px}
+.num b{display:block;font:500 clamp(3rem,6vw,5.2rem)/.9 var(--display);letter-spacing:0;font-variant-numeric:tabular-nums}
+.num span{display:block;margin-top:12px;font:500 .9rem/1.3 var(--display);text-transform:uppercase;letter-spacing:.12em;color:#6B5A3E}
+.num{border-top-width:1px;text-align:center}
+@media (max-width:820px){.numbers .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* École */
+.ecole{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:640px}
+.ecole .img{background:var(--sand) url("../img/ecole-main.jpg") center 60%/cover no-repeat;min-height:420px}
+.ecole .txt{display:grid;align-content:center;gap:28px;padding:clamp(48px,7vw,104px) var(--gr) clamp(48px,7vw,104px) clamp(24px,6vw,96px)}
+.ecole p{font-size:1.1rem;max-width:40ch;color:var(--grey)}
+.ecole p strong{color:var(--ink);font-weight:500}
+.quote{border-left:3px solid var(--sand);padding-left:20px;display:grid;gap:6px}
+.quote b{font:700 clamp(2.4rem,4.4vw,3.6rem)/.9 var(--display);color:var(--navy)}
+.quote span{font-size:.98rem;color:var(--grey);max-width:34ch}
+.groups{font:500 .82rem/1.9 var(--display);letter-spacing:.08em;text-transform:uppercase;color:#8A7A60;max-width:46ch}
+@media (max-width:860px){.ecole{grid-template-columns:minmax(0,1fr)}.ecole .txt{padding-left:var(--gl)}}
+.ecole-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;background:#fff}
+.ecole-strip img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+@media (max-width:760px){.ecole-strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Qui sommes-nous */
+.about .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:32px clamp(32px,6vw,96px);align-items:start}
+.about .txt{display:grid;gap:18px}
+.about p{font-size:1.1rem;color:var(--grey);max-width:56ch}
+.about .motto{font:500 1rem/1.4 var(--display);letter-spacing:.14em;text-transform:uppercase;color:#8A7A60;margin-top:6px}
+@media (max-width:820px){.about .wrap{grid-template-columns:minmax(0,1fr)}}
+
+/* Soutiens (logos) */
+.sup-title{font:500 .85rem/1 var(--display);letter-spacing:.16em;text-transform:uppercase;color:#8A7A60;margin:44px 0 18px}
+.sup-logos{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+@media (max-width:1000px){.sup-logos{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media (max-width:560px){.sup-logos{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.sup-logos div{height:88px;display:flex;align-items:center;justify-content:center;padding:10px;border:1px solid #EEE9E1}
+.sup-logos img{max-width:100%;max-height:60px;width:auto;height:auto;object-fit:contain}
+
+/* Citation */
+.endorse{display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);gap:32px clamp(32px,5vw,72px);align-items:center;margin-top:24px;padding-top:40px;border-top:1px solid #EEE9E1}
+.endorse img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+.endorse blockquote{margin:0;font:400 clamp(1.25rem,2.2vw,1.65rem)/1.45 var(--body);color:var(--navy);max-width:40ch}
+.endorse cite{display:block;margin-top:18px;font:500 .85rem/1.4 var(--display);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:#8A7A60}
+@media (max-width:700px){.endorse{grid-template-columns:minmax(0,1fr)}.endorse img{max-width:260px}}
+
+/* Dropdowns */
+.drop{border-top:1px solid #DCD3C4;border-bottom:1px solid #DCD3C4}
+.drop summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:26px 0;font:500 1.2rem/1 var(--display);text-transform:uppercase;letter-spacing:.08em;color:var(--navy)}
+.drop summary::-webkit-details-marker{display:none}
+.drop summary::after{content:"+";font:300 2rem/1 var(--body);transition:transform .25s ease}
+.drop[open] summary::after{transform:rotate(45deg)}
+.drop summary:focus-visible{outline:2px solid var(--sand);outline-offset:4px}
+.drop summary small{font:400 .95rem/1.4 var(--body);text-transform:none;letter-spacing:0;color:var(--grey);margin-left:16px}
+.drop-body{padding:8px 0 48px}
+.tournois .drop{border-color:rgba(255,255,255,.2)}
+.tournois .drop summary{color:#fff}
+.tournois .drop summary small{color:#AEB8CC}
+.drop + .drop{border-top:0}
+.steps-intro{color:#C9D2E3;margin-bottom:12px}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:0 24px}
+.steps li{display:grid;grid-template-columns:2rem minmax(0,1fr);align-content:start;gap:4px 12px;padding:20px 0;border-top:1px solid rgba(255,255,255,.14)}
+@media (min-width:1000px){
+  .steps{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .steps li{grid-template-columns:minmax(0,1fr);gap:8px}
+  .steps h3{font-size:.95rem}
+}
+.steps li > span{font:500 1.4rem/1.2 var(--display);color:var(--sand)}
+.steps h3{font:500 1.05rem/1.3 var(--display);text-transform:uppercase;letter-spacing:.06em;color:#fff;margin:0 0 6px;white-space:nowrap}
+@media (max-width:560px){.drop summary small{display:none}}
+.steps p{color:#C9D2E3;font-size:.95rem}
+.steps a{color:#fff;text-decoration:underline;text-decoration-color:rgba(238,190,121,.6);text-underline-offset:3px}
+.steps a:hover{color:var(--sand)}
+
+/* Coachs */
+.cg-head{display:grid;gap:12px;margin-bottom:36px}
+.cg-head .lead{font-size:1.05rem;color:var(--grey);max-width:52ch}
+.cg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(32px,5vw,64px)}
+.cg-item{display:grid;grid-template-columns:132px minmax(0,1fr);gap:20px;align-items:start;padding:28px 0;border-top:1px solid #DCD3C4}
+.cg-item .ph{display:block;aspect-ratio:4/5;overflow:hidden;background:var(--navy)}
+.cg-item .ph img{display:block;width:100%;height:100%;object-fit:cover}
+.cg-item .ph.ini{display:flex;align-items:center;justify-content:center;font:500 1.5rem/1 var(--display);letter-spacing:.08em;color:var(--sand)}
+.cg-item h3{font:500 1.2rem/1.15 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--navy)}
+.cg-item small{display:block;margin:4px 0 10px;font:500 .75rem/1.3 var(--display);letter-spacing:.12em;text-transform:uppercase;color:#8A7A60}
+.cg-item p{color:var(--grey);font-size:.95rem;max-width:56ch}
+@media (max-width:900px){.cg{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:480px){.cg-item{grid-template-columns:96px minmax(0,1fr);gap:16px}.cg-item h3{font-size:1.05rem}}
+.coach-side{display:grid;gap:20px;align-content:start}
+.coach-side .lead{font-size:1.05rem;color:var(--grey);max-width:44ch}
+.coach-layout figure img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 70%}
+@media (max-width:860px){.coach-layout figure img{aspect-ratio:1/1}}
+.coach-list{margin-top:8px;border-bottom:1px solid #DCD3C4}
+.coach-list .coach{border-top:1px solid #DCD3C4;padding:0;display:block}
+.coach-list summary{list-style:none;cursor:pointer;display:block;position:relative;padding:15px 2.5rem 15px 0}
+.coach-list .sum{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 20px}
+.coach-list summary h3{font-size:1.2rem;margin:0}
+.coach-list summary .role{font-size:.72rem}
+.coach-list summary::-webkit-details-marker{display:none}
+.coach-list summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);font:300 1.8rem/1 var(--body);color:var(--navy);transition:transform .25s ease}
+.coach-list .coach[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.coach-list summary:focus-visible{outline:2px solid var(--sand);outline-offset:4px}
+.coach-list .coach p{padding:0 0 20px;max-width:60ch;font-size:.97rem}
+@media (max-width:1100px){.coach-list .sum{flex-direction:column;align-items:flex-start}}
+.coach-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px clamp(32px,5vw,72px);align-items:start}
+.coach-layout figure{margin:0}
+.coach-layout figure div{aspect-ratio:6/5;background:var(--navy) url("../img/coachs-portrait.jpg") center/cover no-repeat}
+.coach-layout figcaption{margin-top:10px;font-size:.85rem;color:#8A7A60}
+@media (max-width:860px){.coach-layout{grid-template-columns:minmax(0,1fr)}.coach-layout figure{position:static}}
+.coach-grid{display:grid;grid-template-columns:minmax(0,1fr)}
+.coach{border-top:1px solid #DCD3C4;padding:28px 0 32px;display:grid;gap:8px;align-content:start}
+.coach h3{font:500 1.5rem/1.1 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--navy)}
+.coach .role{font:500 .8rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:#8A7A60}
+.coach p{color:var(--grey);max-width:54ch}
+.coach.guest{grid-column:1/-1;border-bottom:1px solid #DCD3C4}
+
+/* Mosaic */
+.mosaic{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:280px 280px;gap:4px;background:#fff}
+.mosaic div{background:var(--navy) center/cover no-repeat}
+.mosaic div:first-child{grid-row:span 2}
+@media (max-width:760px){.mosaic{grid-template-columns:1fr 1fr;grid-template-rows:240px 180px 180px}.mosaic div:first-child{grid-column:span 2;grid-row:auto}}
+
+/* Tournois */
+.tournois{background:var(--navy);color:#fff}
+.t-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:32px 64px;align-items:end;margin-bottom:40px}
+.t-head p{font-size:1.15rem;color:#C9D2E3;max-width:38ch}
+.t-head h2 em{font-style:normal;color:var(--sand)}
+@media (max-width:860px){.t-head{grid-template-columns:minmax(0,1fr)}}
+.results{overflow-x:auto}
+table{width:100%;min-width:760px;border-collapse:collapse}
+th{font:500 .85rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--sand);text-align:left;padding:0 16px 16px 0;border-bottom:2px solid rgba(238,190,121,.6)}
+td{padding:18px 16px 18px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:1rem;color:#E8ECF4}
+td:first-child{font:700 1.4rem/1 var(--display);text-transform:uppercase;color:#fff;white-space:nowrap;font-variant-numeric:tabular-nums}
+td:nth-child(3){font:700 1rem/1 var(--display);color:#7FC6FF;letter-spacing:.06em}
+.lvl-note{display:block;margin-top:5px;font:500 .7rem/1.2 var(--display);letter-spacing:.12em;text-transform:uppercase;color:#C9D2E3}
+td.pl{font:500 .82rem/1.4 var(--display);letter-spacing:.12em;text-transform:uppercase;color:#C9D2E3}
+td.na{color:#7F8BA6}
+td{vertical-align:top}
+.pod{list-style:none;margin:0;padding:0;counter-reset:p}
+.pod li{counter-increment:p;display:flex;gap:10px;align-items:baseline}
+.pod li::before{content:counter(p);flex:none;width:.9rem;font:500 .8rem/1 var(--display);color:var(--sand)}
+.pod li + li{margin-top:5px;font-size:.9rem;color:#AEB8CC}
+.pod li + li::before{color:#7F8BA6}
+
+
+/* Où jouer */
+.spots-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 64px;align-items:end;margin-bottom:36px}
+.spots-head p{font-size:1.05rem;color:var(--grey);max-width:44ch}
+@media (max-width:860px){.spots-head{grid-template-columns:minmax(0,1fr)}}
+.spots{list-style:none;margin:0 0 32px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 clamp(24px,4vw,48px)}
+.spots li{border-top:1px solid #E6E1D8}
+.spots li a{display:block;padding:16px 0;text-decoration:none}
+.sp-name{display:block;font:500 1.05rem/1.3 var(--body);color:var(--navy);transition:color .2s ease}
+.sp-meta{display:block;margin-top:2px;font-size:.88rem;color:#8A8F9C}
+.spots li a:hover .sp-name{color:#C99A55}
+@media (max-width:1000px){.spots{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.spots{grid-template-columns:minmax(0,1fr)}}
+.spots-more{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px clamp(32px,5vw,64px)}
+.spots-more p{color:var(--grey);font-size:.98rem;max-width:56ch}
+.spots-more a{color:var(--navy)}
+@media (max-width:760px){.spots-more{grid-template-columns:minmax(0,1fr)}}
+
+/* Événements passés */
+.events{background:#F7F2EA}
+.ev-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px;margin-bottom:48px}
+.tabs{display:flex;gap:4px;border-bottom:1px solid #DCD3C4}
+.tabs button{appearance:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:10px 16px;font:500 .95rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:#8A7A60;cursor:pointer;transition:color .2s ease,border-color .2s ease}
+.tabs button:hover{color:var(--navy)}
+.tabs button[aria-selected="true"]{color:var(--navy);border-bottom-color:var(--navy)}
+.tabs button:focus-visible{outline:2px solid var(--sand);outline-offset:2px}
+.panel{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,72px);align-items:start}
+.panel.solo{grid-template-columns:minmax(0,1fr)}
+.panel[hidden]{display:none}
+.panel figure{margin:0}
+.panel figure div{aspect-ratio:4/5;background:var(--navy) center/cover no-repeat}
+.panel figure.pair{display:grid;gap:10px}
+.panel figure.pair div{aspect-ratio:3/2}
+.panel figcaption{margin-top:10px;font-size:.85rem;color:#8A7A60}
+.ev-list{list-style:none;margin:0;padding:0}
+.ev-list li{display:grid;grid-template-columns:9.5rem minmax(0,1fr);gap:8px 24px;padding:26px 0;border-top:1px solid #DCD3C4}
+.ev-list li:last-child{border-bottom:1px solid #DCD3C4}
+.ev-list time{font:500 .85rem/1.6 var(--display);letter-spacing:.12em;text-transform:uppercase;color:#8A7A60}
+.ev-list h3{font:500 1.35rem/1.2 var(--display);text-transform:uppercase;letter-spacing:.02em;margin:0 0 6px;color:var(--navy)}
+.ev-list p{color:var(--grey);max-width:52ch}
+@media (max-width:860px){.panel{grid-template-columns:minmax(0,1fr)}.panel figure div{aspect-ratio:16/10}.ev-list li{grid-template-columns:minmax(0,1fr)}}
+
+/* Halle */
+.halle{background:#FFFFFF;color:var(--navy)}
+.halle h2 span{color:#C99A55}
+.halle .wrap{display:grid;gap:40px}
+.halle h2{font-size:clamp(2.6rem,6vw,5.2rem);max-width:14ch}
+.halle-foot{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:32px 64px;align-items:end;border-top:1px solid var(--sand);padding-top:32px}
+.halle-foot p{font-size:1.1rem;max-width:46ch}
+.halle-foot .specs{margin-top:22px;font:500 .9rem/1.6 var(--display);letter-spacing:.12em;text-transform:uppercase;color:#8A7A60}
+.halle-foot .backing{margin-top:10px;font-size:.95rem;color:var(--grey)}
+@media (max-width:820px){.halle-foot{grid-template-columns:minmax(0,1fr)}}
+
+/* Partenaires */
+.partners h2{margin-bottom:32px;font-size:clamp(2.2rem,5vw,3.8rem)}
+.partners.pad{padding-block:clamp(56px,7vw,88px)}
+.partners .support{margin-top:20px}
+.tier-name{font:500 .85rem/1 var(--display);letter-spacing:.16em;text-transform:uppercase;color:#8A7A60;margin:0 0 14px}
+.logos{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px;margin-bottom:28px}
+@media (max-width:1000px){.logos{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:560px){.logos{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.logo{background:#fff;border:1px solid #E6E1D8;height:110px;display:flex;align-items:center;justify-content:center;padding:14px;text-decoration:none;transition:border-color .2s ease,box-shadow .2s ease}
+a.logo:hover{border-color:var(--sand);box-shadow:0 6px 24px rgba(20,33,61,.08)}
+.logo img{max-width:82%;max-height:52px;width:auto;height:auto;object-fit:contain}
+.logo img.tall{max-height:72px}
+.logo img.square{max-height:48px;border-radius:8px}
+.partners .pad-tight{padding-block:clamp(56px,7vw,88px)}
+.partner-cta{font-size:1rem;color:var(--grey)}
+.sponsor-drop{margin:8px 0 12px}
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px clamp(24px,4vw,48px)}
+.tiers > div{border-top:2px solid var(--sand);padding-top:18px}
+.tiers h3{font:500 1.2rem/1.15 var(--display);text-transform:uppercase;letter-spacing:.04em;color:var(--navy);margin-bottom:10px}
+.tiers small{display:block;margin:4px 0 10px;font:500 .8rem/1.3 var(--display);letter-spacing:.12em;text-transform:uppercase;color:#8A7A60}
+.tiers p{color:var(--grey);font-size:.95rem}
+.tiers-intro{margin:0 0 24px;font-size:1.05rem;color:var(--navy)}
+.tiers-note{margin-top:28px;color:var(--grey);font-size:.98rem;max-width:70ch}
+.tiers-note a{color:var(--navy)}
+@media (max-width:860px){.tiers{grid-template-columns:minmax(0,1fr)}}
+.support{margin-top:40px;color:var(--grey);font-size:.98rem;line-height:1.9;max-width:900px}
+.support b{color:var(--ink);font:700 .9rem/1 var(--display);letter-spacing:.12em;text-transform:uppercase;margin-right:10px}
+
+/* Comité */
+.team-wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:32px clamp(32px,5vw,72px);align-items:end;margin-top:48px}
+@media (max-width:860px){.team-wrap{grid-template-columns:minmax(0,1fr)}}
+.com{display:grid;grid-template-columns:repeat(4,minmax(0,170px));gap:32px;margin-top:40px}
+.com-m{text-align:center}
+.com-m img{display:block;width:120px;height:120px;margin:0 auto 14px;border-radius:50%;object-fit:cover;object-position:center 30%}
+.com-m b{display:block;font:500 1rem/1.15 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--navy)}
+.com-m span{display:block;margin-top:4px;font-size:.85rem;line-height:1.35;color:var(--grey)}
+@media (max-width:760px){.com{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 16px}.com-m img{width:104px;height:104px}}
+.team-photo{margin:0}
+.team-photo img{display:block;width:100%;height:auto}
+.team-order{font:500 .8rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:#8A7A60;margin-bottom:6px}
+.team{display:grid;grid-template-columns:minmax(0,1fr)!important}
+.team .member{gap:6px;padding:18px 0;border-top:1px solid #E6E1D8}
+.team .member:last-child{border-bottom:1px solid #E6E1D8}
+.team .member span{margin-top:0}
+@media (max-width:860px){.team{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.member{display:grid;gap:14px;align-content:start}
+.member .ph{aspect-ratio:4/5;max-width:100%;background:#22325A center/cover no-repeat;display:flex;align-items:center;justify-content:center;font:700 3rem/1 var(--display);color:rgba(238,190,121,.55);letter-spacing:.04em}
+.member b{font:700 clamp(1.3rem,2vw,1.7rem)/1 var(--display);text-transform:uppercase}
+.member span{font-size:.92rem;color:var(--grey);margin-top:-6px}
+
+/* Footer */
+footer{background:var(--navy);color:#AEB8CC;font-size:.88rem}
+footer .wrap{display:grid;gap:28px;padding-block:56px 32px}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px 40px}
+.foot-top .name{font:500 1.1rem/1 var(--display);letter-spacing:.16em;text-transform:uppercase;color:#fff}
+.foot-links{display:flex;flex-wrap:wrap;gap:10px 28px}
+footer a{color:#fff;text-decoration:none;font:500 .85rem/1 var(--display);letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:4px;transition:border-color .2s ease,color .2s ease}
+footer a:hover{color:var(--sand);border-color:var(--sand)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;border-top:1px solid rgba(255,255,255,.16);padding-top:22px}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a href="#top">BHGE</a>
+    <nav aria-label="Navigation">
+      <a href="#club">The club</a>
+      <a href="#ecole">School</a>
+      <a href="#tournois">Tournaments</a>
+      <a href="#jouer">Where to play</a>
+      <a href="#evenements">Events</a>
+      <a href="#halle">The hall</a>
+      <a href="#partenaires">Partners</a>
+      <a class="ig" href="https://www.instagram.com/beach_halle_geneve/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a class="lang" href="../index.html" lang="fr" hreflang="fr" title="Version française">FR</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <h1 aria-label="Beach Halle Genève">
+        <svg viewBox="0 0 125.98 87.19" fill="#FFFFFF" aria-hidden="true"><path d="m27.18,20.02c.94-1.78,1.4-3.7,1.4-5.76,0-2.54-.62-4.9-1.87-7.06-1.25-2.16-2.95-3.9-5.11-5.22-2.16-1.32-4.61-1.98-7.34-1.98H.43C.24,0,.14.1.14.29l-.14,49.46c0,.24.1.36.29.36h12.89c2.78,0,5.32-.68,7.6-2.05,2.28-1.37,4.09-3.2,5.44-5.51,1.34-2.3,2.02-4.85,2.02-7.63,0-2.02-.38-3.93-1.15-5.76-.77-1.82-1.85-3.43-3.24-4.82,1.3-1.1,2.41-2.54,3.35-4.32Zm-9.54,19.4c-1.25,1.27-2.74,1.91-4.46,1.91h-4.46l.07-12.74h4.39c1.73,0,3.22.62,4.46,1.87,1.25,1.25,1.87,2.74,1.87,4.46s-.62,3.23-1.87,4.5Zm.68-21.31c-1.03,1.18-2.39,1.76-4.07,1.76h-5.47v-11.3h5.47c1.54,0,2.85.56,3.96,1.69,1.1,1.13,1.66,2.46,1.66,4,0,1.39-.52,2.68-1.55,3.85Z"/><path d="m87.95,34.26c-2.14-1.27-4.52-1.91-7.16-1.91s-4.88.65-7.02,1.94c-2.14,1.3-3.84,3.04-5.11,5.22-1.27,2.18-1.91,4.57-1.91,7.16v22.82c0,2.69.64,5.12,1.91,7.31,1.27,2.19,2.96,3.92,5.08,5.22,2.11,1.3,4.46,1.94,7.06,1.94s5.02-.65,7.13-1.94c2.11-1.3,3.8-3.04,5.08-5.22,1.27-2.18,1.91-4.62,1.91-7.31v-11.95c0-.24-.1-.36-.29-.36h-13.46c-.24,0-.36.12-.36.36v8.06c0,.24.12.36.36.36h5.04v3.53c0,1.63-.52,3-1.55,4.1-1.03,1.11-2.32,1.66-3.85,1.66-1.44,0-2.69-.56-3.74-1.69-1.06-1.13-1.58-2.48-1.58-4.07v-22.82c0-1.54.54-2.88,1.62-4.03,1.08-1.15,2.31-1.73,3.71-1.73,1.54,0,2.82.6,3.85,1.8,1.03,1.2,1.55,2.71,1.55,4.54v2.74c0,.19.1.29.29.29h8.06c.24,0,.36-.1.36-.29v-3.31c0-2.69-.62-5.11-1.87-7.27-1.25-2.16-2.94-3.88-5.08-5.15Z"/><path d="m123.55,61.8c.19,0,.29-.1.29-.29l-.07-8.14c0-.19-.1-.29-.29-.29h-14.76v-11.23h14.76c.19,0,.29-.1.29-.29v-8.06c0-.24-.1-.36-.29-.36h-23.11c-.19,0-.29.1-.29.29l-.07,49.46c0,.24.1.36.29.36h23.26c.19,0,.29-.1.29-.29v-8.21c0-.24-.1-.36-.29-.36h-14.83v-12.6h14.83Z"/><path d="m61.62,19.87l-.06-19.59c0-.19-.12-.29-.36-.29h-7.99c-.19,0-.29.1-.29.29v19.58h-10.8l.07-19.58c0-.19-.12-.29-.36-.29h-7.99c-.24,0-.36.1-.36.29l-.07,49.46c0,.24.1.36.29.36h8.14c.19,0,.29-.12.29-.36v-21.17h2.6s8.21,0,8.21,0v58.6h8.77v-37.4s.01-.02.01-.03v-3.68s-.01-8.97-.01-8.97h-.03l-.02-8.51h64.34v-8.71H61.62Z"/></svg>
+      </h1>
+      <div class="hero-line">
+        <p>Geneva’s beach volleyball club. A school, tournaments, and an indoor hall still to build.</p>
+        <a class="btn" href="https://www.instagram.com/beach_halle_geneve/" target="_blank" rel="noopener">Follow the club</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about pad" id="club" aria-labelledby="club-t">
+    <div class="wrap">
+      <h2 id="club-t">Who we are</h2>
+      <div class="txt">
+        <p>Beach Halle Genève is a beach volleyball club founded in 2023 by Geneva players and affiliated with Swiss Volley Région Genève. We are a non-profit association, and every franc we earn goes back into the school, the tournaments and the hall project.</p>
+        <p>In summer we run official tournaments and a school for every level at the Evaux, Vessy and Varembé. The rest of the year we work on what Geneva is still missing, a hall where people can play on sand whatever the season.</p>
+        <p class="motto">By beachers, for beachers</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="numbers" aria-label="The 2026 season in numbers">
+    <div class="wrap">
+      <div class="num"><b>100</b><span>students in the school</span></div>
+      <div class="num"><b>384</b><span>hours of training</span></div>
+      <div class="num"><b>23</b><span>official B tournaments</span></div>
+      <div class="num"><b>7</b><span>coaches</span></div>
+    </div>
+  </section>
+
+  <section class="ecole" id="ecole" aria-labelledby="ecole-t">
+    <div class="img" role="img" aria-label="A player in a BHGE jersey jumping at the net"></div>
+    <div class="txt">
+      <h2 id="ecole-t">The school is back in 2027</h2>
+      <p>In 2026, 100 students trained in 12 groups from April to September on three sites, the Evaux, Vessy and Varembé. The first season in 2025 had about&nbsp;40, and the next one is already being prepared.</p>
+      <div class="quote"><b>72.5 %</b><span>of students plan to come back</span></div>      <div><a class="btn dark" href="https://www.instagram.com/beach_halle_geneve/" target="_blank" rel="noopener">Hear when sign-ups open</a></div>
+    </div>
+  </section>
+  <div class="ecole-strip" aria-label="School training sessions">
+    <img src="../img/ecole-1.jpg" alt="A floor drill during a school session" loading="lazy">
+    <img src="../img/ecole-2.jpg" alt="A coach showing how to block at the net" loading="lazy">
+    <img src="../img/ecole-3.jpg" alt="A group ball drill during a school session" loading="lazy">
+    <img src="../img/ecole-4.jpg" alt="A rally at the Evaux in March" loading="lazy">
+  </div>
+
+  <section class="coachs pad" id="coachs" aria-labelledby="coachs-t">
+    <div class="wrap">
+      <div class="cg-head">
+        <h2 id="coachs-t">The coaches</h2>
+        <p class="lead">Seven coaches ran the school in 2026, at the Evaux, Vessy and Varembé.</p>
+      </div>
+      <div class="cg">
+        <div class="cg-item"><span class="ph"><img src="../img/georgiy.jpg" alt=""></span><div><h3>Georgiy Nasibullin</h3><small>Coach, strength and conditioning</small><p>After sixteen years of professional volleyball in Europe and a master’s in sports science, he worked as strength and conditioning coach for Volero Zürich, Chênois and Infomaniak Genève Volley. Today he also works with Swiss fencers and an Olympic medallist in kayak.</p></div></div>
+        <div class="cg-item"><span class="ph"><img src="../img/antoine.jpg" alt="" loading="lazy"></span><div><h3>Antoine Zaugg</h3><small>Coach</small><p>Antoine is a regional beach volleyball coach in Geneva and has spent most of his career with juniors. He coached three seasons at Volley Düdingen, winning two league silver medals, then one season at Cheseaux. The high point so far is the gold medal with Geneva’s under-17 team.</p></div></div>
+        <div class="cg-item"><span class="ph"><img src="../img/manda.jpg" alt=""></span><div><h3>Manda Randriatsimihoatra</h3><small>Coach, strength and conditioning</small><p>As strength and conditioning coach at Infomaniak Genève Volley, Manda spends a lot of time on positioning, footwork and clean touches, because those are the basics you pay for later if you skip them.</p></div></div>
+        <div class="cg-item"><span class="ph"><img src="../img/stefano.jpg" alt=""></span><div><h3>Stefano Bianco</h3><small>Coach</small><p>Stefano is the one who started beach volleyball at the Evaux in 2015, with the first training sessions and the first tournaments. He has been Geneva mixed champion twice and has also coached U15 juniors and women’s teams in the second league.</p></div></div>
+        <div class="cg-item"><span class="ph"><img src="../img/bryan.jpg" alt="" loading="lazy"></span><div><h3>Bryan Biderbost</h3><small>Coach, vice-president</small><p>He coached beginners at the Franchises for three seasons and led several junior camps for Swiss Volley Région Genève. In 2025 he won at B1, B2 and B3 level, and he knows how to help someone who is starting from zero.</p></div></div>
+        <div class="cg-item"><span class="ph"><img src="../img/dario.jpg" alt="" loading="lazy"></span><div><h3>Dario Santandrea</h3><small>Coach, president</small><p>After years of football, Dario discovered beach volleyball in 2010 and got into it quickly, to the point of joining camps in Europe with Olympic coaches. This season he took over several school groups whenever the team needed him.</p></div></div>
+        <div class="cg-item"><span class="ph"><img src="../img/fabrizio.jpg" alt="" loading="lazy"></span><div><h3>Fabrizio Bontà</h3><small>Guest coach · Italy</small><p>Beach volleyball coach in Rimini since 2009, qualified with the Italian federation. He came to Geneva in September 2026 for a training weekend with our players.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tournois pad" id="tournois" aria-labelledby="tournois-t">
+    <div class="wrap">
+      <div class="t-head">
+        <h2 id="tournois-t">23 official <em>B tournaments</em></h2>
+        <p>From April to September at the Evaux and in Vessy, all counting for the Swiss Volley national ranking, plus our King &amp; Queen of the Court evenings.</p>
+      </div>
+      <details class="drop">
+      <summary><span>2026 podiums<small>13 dates, women and men</small></span></summary>
+      <div class="drop-body results" role="region" aria-label="2026 tournament podiums" tabindex="0">
+        <table>
+          <thead><tr><th scope="col">2026</th><th scope="col">Venue</th><th scope="col">Level</th><th scope="col">Women</th><th scope="col">Men</th></tr></thead>
+          <tbody>
+            <tr><td>20 Sept</td><td class="pl">Evaux</td><td>B1</td><td><ol class="pod"><li>Lorena Gonzalez / Katarina Valastanova</li><li>Maya Lattion / Emeline Bussien</li><li>Céline Dubois / Maeve Dominin</li></ol></td><td><ol class="pod"><li>Lucas Schlenger / Samuel Maurer</li><li>Jayro Junior / Léo Tercier</li><li>Camil Huerkamp / Marc Vincent</li></ol></td></tr>
+            <tr><td>6 Sept</td><td class="pl">Evaux</td><td>B2</td><td><ol class="pod"><li>Laeti Aeby / Sara Montecchiari</li><li>Katarina Valastanova / Lorena Gonzalez</li><li>Anouk Hummel / Salma Chatagny</li></ol></td><td><ol class="pod"><li>Makis Torres / Quentin Meylan</li><li>Jérôme Haldemann / Bryan Biderbost</li><li>Christian Clerc / Selim Besseling</li></ol></td></tr>
+            <tr><td>23 Aug</td><td class="pl">Evaux</td><td>B2</td><td class="na">—</td><td><ol class="pod"><li>Bryan Biderbost / Christian Clerc</li><li>Woody Nightingale / Anthony Chatelanat</li><li>Ismail Ben Salah / Eliot Conté</li></ol></td></tr>
+            <tr><td>9 Aug</td><td class="pl">Evaux</td><td>B1</td><td><ol class="pod"><li>Meike Behrensen / Alice Brovarone</li><li>Elena Benguerel / Salma Chatagny</li><li>Lorena Gonzalez / Katarina Valastanova</li></ol></td><td><ol class="pod"><li>Loic Steyaert / Tobias Jacot</li><li>Abdulmalek Homayoun Shah / Jérémie Moinat</li><li>Christian Clerc / Nikita Surin</li></ol></td></tr>
+            <tr><td>2 Aug</td><td class="pl">Evaux</td><td>B3<span class="lvl-note">Beginner</span></td><td><ol class="pod"><li>Amélie Gilliéron / Emilie Tribolet</li><li>Nancy Perrottet Ries / Caroline Mury</li><li>Lorena Gonzalez / Neigeline Rivollat</li></ol></td><td><ol class="pod"><li>Oleksii Moskalenko / Nicolas Portenier</li><li>Stefano Bianco / Romuald Dimnet</li><li>Quentin Remy / Michael Dibner</li></ol></td></tr>
+            <tr><td>26 July</td><td class="pl">Evaux</td><td>B1</td><td class="na">—</td><td><ol class="pod"><li>Nicolas Déglon / Loic Steyaert</li><li>Jérémie Moinat / Valentin Mazzieri</li><li>Mladen Lazic / Bryan Biderbost</li></ol></td></tr>
+            <tr><td>18 July</td><td class="pl">Evaux</td><td>B2</td><td><ol class="pod"><li>Lorena Gonzalez / Maeve Dominin</li><li>Katarina Valastanova / Elena Tartus</li><li>Magdalena Geiger / Magdalena Golzyk</li></ol></td><td><ol class="pod"><li>Anthony Chatelanat / Alberto Piasco</li><li>Joachim Ischi / Mathys Martinet</li><li>Nathan Sedzik / Jerome Kunz</li></ol></td></tr>
+            <tr><td>12 July</td><td class="pl">Evaux</td><td>B2</td><td><ol class="pod"><li>Lorena Gonzalez / Maeve Dominin</li><li>Violeta Kostadinova / Arwen Giraud</li><li>Sarabeth Murray / Coline Jiguet</li></ol></td><td><ol class="pod"><li>Eliot Conté / Nicolas Déglon</li><li>Manda Randriatsimihoatra / Geodric Talde</li><li>Quentin Sottocasa / Bryan Biderbost</li></ol></td></tr>
+            <tr><td>4 July</td><td class="pl">Evaux</td><td>B1</td><td class="na">—</td><td><ol class="pod"><li>Joachim Ischi / Nicolas Déglon</li><li>Tobias Jacot / Robin Enrico</li><li>Lanic Netthoevel / Anthony Anello</li></ol></td></tr>
+            <tr><td>7 June</td><td class="pl">Vessy</td><td>B3<span class="lvl-note">Beginner</span></td><td><ol class="pod"><li>Méribé Estermann / Daniela Fabbiani</li><li>Christina Lutz / Gemma Cavaliere</li><li>Amélie Gilliéron / Emilie Tribolet</li></ol></td><td><ol class="pod"><li>Jacques Allemann / Til Schaller</li><li>Loïc Jakob / Christian Clerc</li><li>Matthias Pache / Vadim Fraissinede</li></ol></td></tr>
+            <tr><td>9 May</td><td class="pl">Evaux</td><td>B2</td><td><ol class="pod"><li>Joëlle Da Fonseca / Amandine Geslin</li><li>Laetitia Aeby / Céline Dubois</li><li>Claire Troillet / Léonie Locatelli</li></ol></td><td><ol class="pod"><li>Alexis Racovita / Gustav Gelfort</li><li>Samuele Casale / Vadim Fraissinede</li><li>Léo Persoz / Dario Béguelin</li></ol></td></tr>
+            <tr><td>2 May</td><td class="pl">Evaux</td><td>B1</td><td><ol class="pod"><li>Ingrid Manzoni Volpi / Arwen Giraud</li><li>Valentina Sobhani / Jill Ewa Münstermann</li><li>Alexandra Bielinski / Sara Montecchiari</li></ol></td><td><ol class="pod"><li>Valentin Mazzieri / Samuel Maurer</li><li>Quentin Sottocasa / Bryan Biderbost</li><li>Georgiy Nasibullin / Miroslav Tomasik</li></ol></td></tr>
+            <tr><td>26 Apr</td><td class="pl">Evaux</td><td>B1</td><td><ol class="pod"><li>Valentina Sobhani / Jill Ewa Münstermann</li><li>Catherine Sottas / Arwen Giraud</li><li>Elena Benguerel / Salma Chatagny</li></ol></td><td><ol class="pod"><li>Loic Steyaert / Samuel Maurer</li><li>André Stowasser / Guillaume Jaques</li><li>Dario Béguelin / Léo Persoz</li></ol></td></tr>
+          </tbody>
+        </table>
+      </div>
+      </details>
+      <details class="drop">
+      <summary><span>How to sign up for a tournament<small>Licence, team and registration on VolleyManager</small></span></summary>
+      <div class="drop-body">
+        <p class="steps-intro">Everything happens on VolleyManager, the Swiss Volley platform, which is not very intuitive the first time you use it.</p>
+        <ol class="steps">
+          <li><span>1</span><div><h3>Create an account</h3><p>Go to <a href="https://volleymanager.volleyball.ch" target="_blank" rel="noopener">volleymanager.volleyball.ch</a> and log in. If you don’t have an account yet, signing up takes a few minutes and your username will be firstname_lastname.</p></div></li>
+          <li><span>2</span><div><h3>Get a licence</h3><p>In the MyBeach module, order a category B licence. It costs 30 francs for the whole season, and you can pay by TWINT, card, PayPal or PostFinance.</p></div></li>
+          <li><span>3</span><div><h3>Form your team</h3><p>Send a request to your partner from VolleyManager, and the team exists as soon as they accept. Both players need a licence before the team can be created.</p></div></li>
+          <li><span>4</span><div><h3>Pick a tournament</h3><p>Filtering by region and category shows the tournaments that are still open. For a first tournament, B3 is the right level to start with.</p></div></li>
+          <li><span>5</span><div><h3>Register</h3><p>From your team’s page, sign up for the tournament you chose. Until the deadline you can withdraw at no cost, and after that only with a medical certificate.</p></div></li>
+        </ol>
+      </div>
+      </details>
+    </div>
+  </section>
+
+  <div class="mosaic" aria-hidden="true">
+    <div style="background-image:url('../img/m4.jpg')"></div>
+    <div style="background-image:url('../img/m1.jpg')"></div>
+    <div style="background-image:url('../img/m2.jpg')"></div>
+    <div style="background-image:url('../img/m3.jpg')"></div>
+    <div style="background-image:url('../img/tournois.jpg')"></div>
+  </div>
+
+  <section class="pad" id="jouer" aria-labelledby="jouer-t">
+    <div class="wrap">
+      <div class="spots-head">
+        <h2 id="jouer-t">Where to play in Geneva</h2>
+        <p>The outdoor courts we know around the lake. Each name opens the map.</p>
+      </div>
+      <ul class="spots">
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=46.21079,6.11711" target="_blank" rel="noopener"><span class="sp-name">Parc des Franchises</span><span class="sp-meta">Châtelaine · 4 courts</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=46.19066,6.09177" target="_blank" rel="noopener"><span class="sp-name">Les Evaux</span><span class="sp-meta">Onex · 4 courts</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=46.18524,6.16842" target="_blank" rel="noopener"><span class="sp-name">Vessy</span><span class="sp-meta">Veyrier · 4 courts</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=46.21837,6.13547" target="_blank" rel="noopener"><span class="sp-name">Varembé</span><span class="sp-meta">Geneva · 1 court</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=46.18920,6.19295" target="_blank" rel="noopener"><span class="sp-name">Sous-Moulin</span><span class="sp-meta">Thônex · 2 courts</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Vaudagne%2C+Meyrin+beach+volley" target="_blank" rel="noopener"><span class="sp-name">Vaudagne</span><span class="sp-meta">Meyrin · 2 courts</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=46.29746,6.15431" target="_blank" rel="noopener"><span class="sp-name">La Bécassière</span><span class="sp-meta">Versoix · 1 court</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=46.25657,6.14149" target="_blank" rel="noopener"><span class="sp-name">Bellevue</span><span class="sp-meta">1 court</span></a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=46.32010,6.19642" target="_blank" rel="noopener"><span class="sp-name">Coppet</span><span class="sp-meta">1 court</span></a></li>
+      </ul>
+      <details class="drop">
+        <summary><span>Good to know<small>Access, opening times and small details</small></span></summary>
+        <div class="drop-body spots-more"><p>Vessy, Varembé, Vaudagne and La Bécassière are free and open to everyone. In Vessy the courts are sometimes taken down for other activities, and the sports centre website says when. At the Evaux the courts are only free when nobody has booked them, and the restaurant is three minutes away.</p><p>Varembé has lights until 9:30 pm and Sous-Moulin is open from May to September. La Bécassière has no lines, so bring your own. At the Franchises the snack bar is open all summer and there are tournaments at weekends. The sand in Bellevue is a bit hard, and Coppet fills up fast as soon as the sun comes out.</p></div>
+      </details>
+      <details class="drop">
+        <summary><span>Pools, beaches and further afield<small>Paid entry and around the lake</small></span></summary>
+        <div class="drop-body spots-more"><p>With a paid entry, you’ll find one court at Genève-Plage in Cologny, another at Le Lignon in Vernier, two at Les Vergers in Meyrin, and beach volleyball next to beach soccer at Marignac in Lancy.</p><p>A little further away there are the Grande Jetée and Colovray in Nyon, then Gland, Crans, Morges and Vidy in Lausanne.</p></div>
+      </details>
+      <details class="drop">
+        <summary><span>Coming without a partner<small>« La gagne » and WhatsApp groups</small></span></summary>
+        <div class="drop-body spots-more"><p>At the Franchises and in Vessy, ask for « la gagne ». You’ll play against the team that wins the current game, with a teammate you find on the spot, and when it gets busy people start games in parallel so nobody waits on the sideline.</p><p>Some courts have their own WhatsApp group for setting up sessions. Ask around on site, or write to us at <a href="mailto:contact@bhge.ch">contact@bhge.ch</a> or on <a href="https://www.instagram.com/beach_halle_geneve/" target="_blank" rel="noopener">Instagram</a>, and we’ll put you in touch.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <section class="events pad" id="evenements" aria-labelledby="ev-t">
+    <div class="wrap">
+      <div class="ev-head">
+        <h2 id="ev-t">Past events</h2>
+        <div class="tabs" role="tablist" aria-label="Year">
+          <button role="tab" id="tab-26" aria-controls="p-26" aria-selected="true">2026</button>
+          <button role="tab" id="tab-25" aria-controls="p-25" aria-selected="false" tabindex="-1">2025</button>
+          <button role="tab" id="tab-24" aria-controls="p-24" aria-selected="false" tabindex="-1">2023–2024</button>
+        </div>
+      </div>
+
+      <div class="panel" id="p-26" role="tabpanel" aria-labelledby="tab-26">
+        <figure><div style="background-image:url('../img/evaluation.jpg');background-position:center 40%" role="img" aria-label="A player and a BHGE coach on the sand at the Evaux during evaluation day"></div><figcaption>School evaluation day, Parc des Evaux</figcaption></figure>
+        <ol class="ev-list">
+          <li><time>September</time><div><h3>End of season</h3><p>Drinks with the players and a King &amp; Queen of the Court at the Evaux on 26 September.</p></div></li>
+          <li><time>June – July</time><div><h3>King &amp; Queen of the Court</h3><p>Two mixed evenings, one in Vessy and the other at the Evaux.</p></div></li>
+          <li><time>June</time><div><h3>Beach Pro Tour Futures Geneva</h3><p>Geneva Beach Events’ tournament at the Parc des Evaux, now in its third edition. We were there as a partner club, with a few volunteers and a stand by the courts.</p></div></li>
+          <li><time>April</time><div><h3>School evaluation day</h3><p>Everyone who had pre-registered played in front of the coaches, who then put the groups together by level.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="panel" id="p-25" role="tabpanel" aria-labelledby="tab-25" hidden>
+        <figure class="pair"><div style="background-image:url('../img/automnales-equipe.jpg')" role="img" aria-label="Five players holding balls on the BHGE court at Palexpo"></div><div style="background-image:url('../img/automnales-joueuses.jpg')" role="img" aria-label="The women players together on the sand at the Automnales"></div><figcaption>On our court at the Automnales, Palexpo</figcaption></figure>
+        <ol class="ev-list">
+          <li><time>November</time><div><h3>Les Automnales, Palexpo</h3><p>Ten days of beach volleyball under a roof, with around fifty players a day, sessions for beginners and a King &amp; Queen of the Court.</p></div></li>
+          <li><time>May – August</time><div><h3>The first school</h3><p>About forty students and two coaches, two evenings a week at the Evaux.</p></div></li>
+          <li><time>Spring</time><div><h3>Léman Bleu</h3><p>The hall project was presented on Geneva’s local TV channel.</p></div></li>
+          <li><time>January</time><div><h3>Round table at Chênois Volley</h3><p>An evening on the future of beach volleyball in Geneva, with Quentin Métral and the club’s top-league team.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="panel solo" id="p-24" role="tabpanel" aria-labelledby="tab-24" hidden>
+        <ol class="ev-list">
+          <li><time>September 2024</time><div><h3>Joining Swiss Volley</h3><p>BHGE becomes a member club of Swiss Volley Région Genève.</p></div></li>
+          <li><time>July 2024</time><div><h3>La Nuit du Beach</h3><p>Thirty teams at the Evaux playing late into the night, with support from Loxam.</p></div></li>
+          <li><time>April 2024</time><div><h3>The first B tournaments</h3><p>For the first time in ten years, official B tournaments were played in Geneva.</p></div></li>
+          <li><time>September 2023</time><div><h3>The club is founded</h3><p>Beach Halle Genève was founded as an association on 24 September 2023.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="halle pad" id="halle" aria-labelledby="halle-t">
+    <div class="wrap">
+      <h2 id="halle-t">A beach hall <span>for Geneva</span></h2>
+      <div class="halle-foot">
+        <div>
+          <p>In Lausanne, Bern, Basel and Zurich you can already play beach volleyball all year round. We want Geneva to have its own hall too, and we are discussing it with the City of Geneva.</p>
+          <p class="backing">With the support of Swiss Volley, Swiss Volley Région Genève, Genève Chênois Volley and Beach-Volley Club Vernier Genève.</p>
+        </div>
+        <div><a class="btn dark" href="https://docs.google.com/forms/d/e/1FAIpQLSeWDNy5I-B_juNFQEbNyqMqJkR6HpJY4TYPpLruDv0-t3bitA/viewform" target="_blank" rel="noopener">Become a member · free</a></div>
+      </div>
+      <figure class="endorse">
+        <img src="../img/soutiens/quentin_metral_2.jpg" alt="Quentin Métral on the sand" loading="lazy">
+        <figcaption>
+          <blockquote>“A beach hall in Geneva would help develop the next generation of competitive beach volleyball, and also physical activity for everyone, all year round.”</blockquote>
+          <cite>Quentin Métral, professional beach volleyball player</cite>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="partners pad" id="partenaires" aria-labelledby="part-t">
+    <div class="wrap">
+      <h2 id="part-t">2026 partners</h2>
+      <div class="logos">
+        <div class="logo"><img src="../img/aion-jersey.svg" alt="AION-Sport"></div>
+        <a class="logo" href="https://rjtraining.ch" target="_blank" rel="noopener"><img class="tall" src="../img/rj.svg" alt="RJ Training"></a>
+        <div class="logo"><img src="../img/ineea.svg" alt="i-NEEA"></div>
+        <div class="logo"><img class="tall" src="../img/damichele.svg" alt="Antica Pizzeria da Michele"></div>
+        <div class="logo"><img src="../img/evaux.svg" alt="Restaurant des Evaux"></div>
+        <a class="logo" href="https://genevabeachevents.ch" target="_blank" rel="noopener"><img class="tall" src="../img/gbe.svg" alt="Geneva Beach Events"></a>
+        <a class="logo" href="https://www.linkedin.com/company/keepushing/" target="_blank" rel="noopener"><img class="square" src="../img/keepushing.jpg" alt="Keepushing"></a>
+      </div>
+      <p class="partner-cta">Thank you to the Fondation des Evaux and the Varembé sports facilities for lending us their courts in 2026.</p>
+      <details class="drop sponsor-drop">
+        <summary><span>Want to support the club in 2027?<small>Three partnership packages</small></span></summary>
+        <div class="drop-body">
+          <p class="tiers-intro">We offer three packages, starting at CHF 500.</p>
+          <div class="tiers">
+            <div><h3>Bronze</h3><p>Your logo on our website, one Instagram post and a mention during a tournament or a class. When the BHGE jerseys come out, we name you along with the other partners.</p></div>
+            <div><h3>Silver</h3><p>Your logo featured on the website and on our posters and visuals, two to four Instagram posts and the title of official partner of Beach Halle Genève. We also talk about you during classes and events.</p></div>
+            <div><h3>Gold</h3><p>Your logo first on the website and on everything made for the project you support, a banner or beach flag by the courts, and four to six posts, one of them entirely about you. Where it’s feasible your logo goes on our jerseys, and we can work out an offer for our members together.</p></div>
+          </div>
+          <p class="tiers-note">You can also support us in kind, the way Da Michele does with vouchers for tournament winners and AION-Sport with its video analysis software. Write to <a href="mailto:contact@bhge.ch">contact@bhge.ch</a> or message us on <a href="https://www.instagram.com/beach_halle_geneve/" target="_blank" rel="noopener">Instagram</a>, and the committee will be glad to walk you through the packages and amounts.</p>
+        </div>
+      </details>
+      <p class="sup-title">They support the hall project</p>
+      <div class="sup-logos">
+        <div><img src="../img/soutiens/geneva_canton.png" alt="Republic and Canton of Geneva" loading="lazy"></div>
+        <div><img src="../img/soutiens/swiss_volley_region_geneve.png" alt="Swiss Volley Région Genève" loading="lazy"></div>
+        <div><img src="../img/soutiens/chenois.png" alt="Genève Chênois Volleyball" loading="lazy"></div>
+        <div><img src="../img/soutiens/VBC_Etoile_Geneve.png" alt="VBC Étoile Genève" loading="lazy"></div>
+        <div><img src="../img/soutiens/PEPS_HQ.png" alt="PEPS VBC" loading="lazy"></div>
+        <div><img src="../img/soutiens/volley_jeunesse_geneve_sud.png" alt="Volley Jeunesse Genève Sud" loading="lazy"></div>
+        <div><img src="../img/soutiens/SSO.png" alt="Servette Star-Onex VBC" loading="lazy"></div>
+        <div><img src="../img/soutiens/VBCPLO.png" alt="VBC Plan-les-Ouates" loading="lazy"></div>
+        <div><img src="../img/soutiens/satigny.png" alt="Satigny Volleyball Mandement" loading="lazy"></div>
+        <div><img src="../img/soutiens/prevessin.png" alt="Volley-Ball Club Ferney-Prévessin" loading="lazy"></div>
+        <div><img src="../img/soutiens/viry.png" alt="Viry Volley Ball" loading="lazy"></div>
+        <div><img src="../img/soutiens/CERN.png" alt="CERN Volleyball" loading="lazy"></div>
+        <div><img src="../img/soutiens/ITU_volleyball.png" alt="ITU Volleyball" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad" style="padding-top:0" aria-labelledby="comite-t">
+    <div class="wrap">
+      <h2 id="comite-t">The committee</h2>
+      <div class="com">
+        <div class="com-m"><img src="../img/dario-c.jpg" alt="Dario Santandrea" loading="lazy"><b>Dario Santandrea</b><span>President</span></div>
+        <div class="com-m"><img src="../img/bryan-c.jpg" alt="Bryan Biderbost" loading="lazy" style="object-position:center"><b>Bryan Biderbost</b><span>Vice-president, coach</span></div>
+        <div class="com-m"><img src="../img/katarina-c.jpg" alt="Katarina Valastanova" loading="lazy" style="object-position:center"><b>Katarina Valastanova</b><span>Tournaments and school</span></div>
+        <div class="com-m"><img src="../img/ays.jpg" alt="Ays Darles" loading="lazy" style="object-position:center"><b>Ays Darles</b><span>Social media, marketing</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <span class="name">Beach Halle Genève</span>
+      <nav class="foot-links" aria-label="Links">
+        <a href="mailto:contact@bhge.ch">contact@bhge.ch</a>
+        <a href="https://www.instagram.com/beach_halle_geneve/" target="_blank" rel="noopener">Instagram</a>
+        <a href="../docs/statuts-bhge.pdf" target="_blank" rel="noopener">Statutes (in French)</a>
+        <a href="../index.html" lang="fr" hreflang="fr">Version française</a>
+      </nav>
+    </div>
+    <div class="foot">
+      <span>Non-profit association · Rue des Délices 12A, 1203 Genève</span>
+      <span>Affiliated with Swiss Volley Région Genève · © 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+['.tabs'].forEach(function(sel){
+  var tabs=[].slice.call(document.querySelectorAll(sel+' [role="tab"]'));
+  function show(t){
+    tabs.forEach(function(x){
+      var on=x===t;
+      x.setAttribute('aria-selected',on);
+      x.tabIndex=on?0:-1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(t)});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;
+      if(d){var n=tabs[(i+d+tabs.length)%tabs.length];show(n);n.focus();e.preventDefault();}
+    });
+  });
+});
+</script>
+</body>
+</html>
